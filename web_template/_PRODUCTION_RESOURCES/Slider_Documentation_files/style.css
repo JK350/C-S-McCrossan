@@ -1,0 +1,160 @@
+/*
+Theme Name: Workshop.rs
+Theme URI: http://wordpress.org/
+Description: workshop.rs theme.
+Version: 1.0
+Author: Lazarevic Ivan
+Author URI: http://workshop.rs/
+Tags: custom
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+/* reset */
+
+h1, h2, h3, h4, img, ul, ol, li, html, body, br { margin: 0px; padding: 0px; border: 0 none; font-weight: normal; }
+ul, li { list-style: none; }
+
+
+body { 
+	background-color: #FBFBFB; 
+	color: #202020; 
+	font-family: Verdana,Arial,Geneva,Helvetica,sans-serif; 
+	font-size: 12px; 
+	line-height: 22px;
+	background: url(images/colors.png) repeat-x right top; 
+}
+
+#page { width: 1000px; margin: 0px auto 50px; }
+
+#content { width: 730px; float: left; }
+
+#sidebar { width: 240px; float: left; padding: 10px; }
+
+.post { border-bottom: 1px dotted #ccc; overflow: hidden; padding: 15px 0px; }
+
+.post_meta { font-size: 10px; }
+.post_body { }
+
+.post_body img { padding: 5px; border: 1px solid #eee; display: none; }
+
+h2 { text-transform: uppercase; font-size: 16px; letter-spacing: 2px; line-height: 22px; }
+h4 { text-transform: uppercase; font-size: 14px; letter-spacing: 2px; line-height: 22px; }
+h2 a { color: #333; }
+h2 a:hover { text-decoration: none; }
+
+.post_body h2 a { background-color: #F5FF4C; color: #333; padding: 3px 10px; }
+.post_body h2 a:hover { background-color: #D5DD42; text-decoration: none; }
+
+a { text-decoration: none; color: #1695A3;  }
+a:hover { text-decoration: underline; }
+
+/* header */
+
+#header { padding: 80px 20px 60px; }
+#logo h1 a{ float: left; text-transform: uppercase; font-size: 28px; letter-spacing: 2px; line-height: 22px; color: #333; }
+#logo h1 a:hover { text-decoration: none; background-color: #F5FF4C;  }
+
+/* sidebar */
+.sidebar a { padding: 5px 5px 5px 25px; }
+.sidebar a:hover { background-color: #F5FF4C; color: #333; }
+.sidebar_twitter a { background: url(images/sprite_ws.png) no-repeat; }
+.sidebar_jquery a { background: url(images/sprite_ws.png) no-repeat 0px -50px; }
+.sidebar_github a { background: url(images/sprite_ws.png) no-repeat 0px -25px; }
+.sidebar_mootools a { background: url(images/sprite_ws.png) no-repeat 0px -75px; }
+.sidebar_rss a { background: url(images/sprite_ws.png) no-repeat 0px -100px; }
+
+/* footer */
+#footer { background-color: #1695A3; clear: both; padding: 30px 0px; background: #1695A3 url(images/colors.png) repeat-x bottom; }
+#footer_content { width: 1000px; margin: 0 auto; }
+#footer a { color: #f3f3f3; }
+.footer_column { float: left; width: 25%; }
+.delicious-timestamp { display: none; }
+
+.tf_name { display: none; }
+
+/* single post */
+.postmetadata { padding: 15px; border-bottom: 1px dotted #ccc; }
+.single_post_h2 { font-size: 22px; padding: 0px 20px 0px 0px; }
+.single_page_post .post { padding: 0px; }
+.single_page_post img { display: block; margin: 0 auto; }
+.single_page_post .post_meta { margin-top: 10px; text-align: left; }
+
+.sociable ul li { float: left; }
+
+#recent_posts li { padding: 10px 10px 0px; position: relative; }
+
+
+#ddLinks { padding: 0px 40px; margin-bottom:15px; overflow:auto; zoom: 1; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; }
+#ddLinks a { float: left; font-size: 22px; outline:medium none; padding:15px 0; text-align:center; width:50%; }
+#ddLinks a .ddText { 
+	color: #1695A3; 
+	display:block; 
+	outline:medium none; 
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;	    
+}
+#ddLinks a small { color: #666; font-size: 18px; }
+#ddLinks a:hover {
+	text-decoration: none;
+	color: #000000; 
+	font-size: 26px;	
+}
+
+#ddLinks.link33 a {
+	width: 33%;
+}
+
+.button a {
+	background: #0B5B60;
+    background: -moz-linear-gradient(center top , #0B5B60, #1695A3) repeat scroll 0 0 transparent;
+    border: 1px solid #0B5B60;
+    color: #FFFFFF;
+    float: left;
+    opacity: 1;
+    outline: medium none;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+}
+.button a:hover {
+	background: #1695A3;
+    background: -moz-linear-gradient(center top , #1695A3, #0B5B60) repeat scroll 0 0 transparent;
+	box-shadow: 0px 0px 5px #0B5B60;
+}
+
+.navigation {
+	overflow: hidden;
+	zoom: 1;
+	padding: 5px 0px;	
+}
+.alignright {
+	float: right;	
+}
+.alignleft {
+	float: left;	
+}
+
+/* comments */
+ol li { border-bottom: 1px dotted #ccc; padding: 5px 0px 15px; clear: both; overflow: hidden; }
+.comment-text { float: left; width: 500px; padding: 0 10px; }
+p { margin: 10px 0px; }
+.comment-author-admin { background-color: #f3ffe2; }
+.commentlist .comment-author, .commentlist .comment-meta { padding-top: 10px; clear: left; float: left; width: 140px; text-align: right; }
+.comment-avatar { float: right; padding: 10px; }
+
+#comment_form { background-color: #f3ffe2; padding: 20px; }
+#comment_form input { font-size: 20px; }
+#comment_form textarea { font-size: 16px; width: 708px; }
+
+#twitter_link { background: url(images/twitter6.png)no-repeat; width: 179px; height: 85px; display: block; text-indent: -999px; margin: 0 auto; }
+
+
+.mdn_promote { padding: 30px; text-align: center; }
+.mdn_promote img { border: 1px solid #CCCCCC; padding: 5px; }
+
+

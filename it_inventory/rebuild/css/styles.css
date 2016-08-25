@@ -1,0 +1,568 @@
+body
+{
+  background: #878787 url(../images/page_bg.gif) repeat;
+}
+
+#wrapper
+{
+ background: #ffffff;
+ width: 900px;
+ margin: 0px auto;
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+.clear
+{
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer
+{
+  height: 25px;
+  background: #ffffff url(../images/content_bg.gif) repeat-y;
+}
+
+a
+{
+  font-size: 12px;
+  color: #000000;
+}
+
+a:hover
+{
+  color: #7f0000;
+}
+
+/*     HEADER STYLES      */
+
+#header
+{
+  background: #ffffff URL(../images/top_banner.gif);
+  height: 93px;
+}
+
+#headerImage
+{
+  padding: 20px 0px 0px 30px;
+}
+
+#adminLink
+{
+  float: right;
+  margin: 0px 15px 0px 0px;
+}
+
+/*     MAIN STYLES FOR COMPLETE ITEM LISTING PAGE ON INDEX.PHP     */
+
+#mainBody
+{
+  background: #ffffff URL(../images/content_bg.gif) repeat-y;
+}
+
+#mainContent
+{
+  margin: 0px 15px 0px 41px;
+}
+
+#contentTitle
+{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 15px 0px;
+}
+
+#equipListHeader
+{
+  text-align: center;
+}
+
+.category
+{
+  width: 190px;
+}
+
+.make
+{
+  width: 125px;
+}
+
+.model
+{
+  width: 115px;
+}
+
+.year
+{
+  width: 50px;
+}
+
+.location
+{
+  width: 210px;
+}
+
+.status
+{
+  width: 80px;
+}
+
+.detail
+{
+  width: 74px;
+}
+
+.equipHeader
+{
+  background: #cccccc;
+  height: 25px;
+  padding: 5px 0px 0px 0px;
+  font-weight: bold;
+  font-size: 16px;
+  float: left;
+}
+
+.equipListRow
+{
+  height: 15px;
+}
+
+.equipBody
+{
+  font-size: 12px;
+  text-align: center;
+  float: left;
+  margin: 10px 0px 5px 0px;
+}
+
+.sold
+{
+  color: red;
+}
+
+/*     MAIN STYLES FOR INDIVIDUAL ITEM LISTING PAGE ON INDEX.PHP     */
+
+#saleItem
+{
+  float: left;
+  width: 470px;
+}
+
+#itemHeader
+{
+  width: 834px;
+  background: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0px 10px 10px;
+}
+
+#itemBody
+{
+  font-size: 12px;
+}
+
+.itemRow
+{
+  width: 470px;
+  margin: 10px 0px 0px 0px;
+}
+
+.rowTitle
+{
+  float: left;
+  width: 125px;
+  font-weight: bold;  
+}
+
+.rowInfo
+{
+  width: 345px;
+  padding: 0px 0px 0px 125px;
+}
+
+#itemContact
+{
+  width: 350px;
+  background: #e1e1e1;
+  font-size: 12px;
+  margin: 30px 0px 0px 0px;
+  padding: 15px 15px 0px 15px;
+}
+
+.contactInfo
+{
+  padding: 0px 0px 0px 125px;
+}
+
+.contactRow
+{
+  padding: 0px 0px 15px 0px;
+}
+
+#requestInfo
+{
+  text-align: center;
+}
+
+#return
+{
+  margin: 15px 0px 0px 0px;
+}
+
+#eListBack
+{
+  font-weight: bold;
+}
+
+#photoGallery
+{
+  float:right;
+  width: 350px;
+  margin: 10px 0px 0px 0px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#hoverPicture
+{
+  padding: 0px 0px 10px 49px;
+  width: 301px;
+  text-align: center;
+}
+
+#hoverText
+{
+  width: 252px;
+  margin: 10px 0px 0px 0px;
+}
+
+#thumbText
+{
+  margin: 0px 0px 10px 0px;
+  
+}
+
+/*     PHOTO VIEWER STYLE ON INDEX.PHP     */
+
+#main
+{
+  border: thin solid #666666;
+}
+
+#preload
+{
+  display:none;
+}
+
+.jqzoom
+{
+  outline-style: none;
+  text-decoration: none;
+  cursor: crosshair;
+  display: block;
+  height: 191px;
+  width: 254px;
+}
+
+/*     ADMIN_LOGIN.PHP STYLES     */
+
+#logInArea
+{
+  margin: 0px 0px 0px 41px;
+  padding: 10px 0px 0px 0px;
+  font-size: 12px;
+  width: 350px;
+}
+
+#formPassword, #formUser
+{
+  margin: 10px 0px 0px 0px;
+}
+
+#formLogIn
+{
+  margin: 10px 0px 0px 100px;
+  width: 100px;
+}
+
+#formLogIn input
+{
+  width: 50px;
+  height: 25px;
+}
+
+#formPassword div, #formUser div
+{
+  float:left;
+  width: 100px;
+}
+
+#loginTitle
+{
+  font-size: 16px;
+  font-weight: bold;
+  width: 250px;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+}
+
+#errorMsg
+{
+  padding: 10px 0px 0px 0px;
+  font-style: italic;
+}
+
+/*     ADMIN_EQUIP.PHP STYLES     */
+
+#adminNav
+{
+  float: right;
+  font-size: 12px;
+  margin: 0px 15px 0px 0px;
+}
+
+#adminEquipHeaderTitle, #adminEquipFooterTitle
+{
+  font-weight: bold;
+  color: #545454;
+  font-size: 20px;
+  padding: 15px 0px 0px 0px;
+}
+
+#adminEquipHeaderLink
+{
+  margin: 15px 0px;
+}
+
+#adminListingReturn
+{
+  float: right;
+}
+
+#adminEquipBanner
+{
+  text-align:center;
+}
+
+.adminCategory
+{
+  width: 170px;
+}
+
+.adminMake
+{
+  width: 85px;
+}
+
+.adminModel
+{
+  width: 105px;
+}
+
+.adminYear
+{
+  width: 45px;
+}
+
+.adminLocation
+{
+  width: 210px;
+}
+
+.adminStatus
+{
+  width: 70px;
+}
+
+.adminSold
+{
+  width: 45px;
+}
+
+.adminEdit
+{
+  width: 40px;
+}
+
+.adminImages
+{
+  width: 70px;
+  text-align: left;
+}
+
+.adminUpdateRow
+{
+  font-size: 13px;
+  margin: 15px 0px 0px 0px;
+}
+
+.adminUpdateTitle
+{
+  float: left;
+  width: 150px;
+  height: 18px;
+}
+
+.adminUpdateField input
+{
+  height: 18px;
+  padding: 0px  0px 0px 2px;
+}
+
+#adminSoldField div
+{
+  float: left;
+  font-size: 12px;
+  margin: 0px 25px 0px 0px;
+}
+
+#adminSoldField input
+{
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+ 
+#formFooter
+{
+  margin: 50px 0px 0px 0px;
+}
+
+#formFooter input
+{
+  height: 25px;
+  width: 125px;
+}
+
+/*     ADMIN_CATEGORIES.PHP STYLES     */
+
+.adminEquipType
+{
+  width: 170px;
+}
+
+/*     ADMIN_EQUIP_IMAGES.PHP STYLES     */
+
+.adminImageHeaderId
+{
+  font-size: 12px;
+  padding: 15px 0px 0px 0px;
+}
+
+#adminEquipImageTitle
+{
+  font-weight: bold;
+  color: #545454;
+  font-size: 18px;
+  padding: 15px 0px 0px 0px;  
+}
+
+#adminEditFormImg
+{
+  margin: 15px 0px 0px 0px;
+}
+
+#imageTable
+{
+  padding: 15px 0px 0px 0px;
+}
+
+.imageRow
+{
+  clear:both;
+}
+
+.imageBodyHeader
+{
+  float: left;
+  font-size: 14px;
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  border-left: thin solid black;
+  text-align: center;
+}
+
+.imageBody
+{
+  border-bottom: thin solid black;
+  border-left:thin solid black;
+  height: 54px;
+  float: left;
+  font-size: 12px;
+  text-align: center;
+}
+
+.imageDelete
+{
+  border-right: thin solid black;
+  padding: 7px;
+  width: 50px;
+}
+
+.image
+{
+  padding: 7px;
+  width: 80px;
+}
+
+.imageFile
+ {
+  padding: 7px;
+  width: 200px;
+ }
+ 
+.imageOrder
+{
+  padding: 7px;
+  width: 40px;
+}
+
+.imageEdit
+{
+  padding: 7px;
+  width: 27px;
+}
+
+#noPics
+{
+  font-size: 12px;
+  margin: 15px 0px 0px 0px;
+}
+
+#photoFooter
+{
+  border-top: thin solid black;
+  margin: 15px 0px 0px 0px;
+}
+
+.footerRow, #submitButton
+{
+  margin: 15px 0px 0px 0px;
+}
+
+.footerRowTitle
+{
+  width: 75px;
+  font-size: 12px;
+  float: left;
+  height: 18px;
+  margin: 3px 0px 0px 0px;
+}
+
+.footerRowField input
+{
+  height: 18px;
+}
+
+.footerRowField
+{
+  float: left;
+}
+
+#submitButton input
+{
+  height: 30px;
+  width: 75px;
+}

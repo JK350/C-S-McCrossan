@@ -1,0 +1,646 @@
+/***GENERIC STYLES**/
+
+#wrapper
+{
+  width: 800px;
+  margin: 0px auto;
+  background: #f0f0f0;
+}
+
+.wrapper
+{
+  margin: 0px auto;
+  background: #f0f0f0;
+}
+
+.centeredDiv
+{
+  margin: 0px auto;
+}
+
+.editButtonDiv
+{
+  margin: 15px auto 0px auto;
+}
+
+.floatLeft
+{
+  float: left;
+}
+
+.floatLeftRM10
+{
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+.clear
+{
+  clear: both;
+}
+
+#footer
+{
+  height: 25px;
+}
+
+a
+{
+  color: #000000;
+}
+
+a:hover
+{
+  color: #7f0000;
+}
+
+.rowTitle
+{
+  float: left;
+  text-align: right;
+  margin: 0px 10px 0px 0px
+}
+
+#indexHeaderBody
+{
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+}
+
+#headerLinks
+{
+  text-align: center;
+  margin: 5px 0px 0px 0px;
+}
+
+/***INVENTORY_LOGIN_CSM.PHP AND CSM_PASSWORD_CHANGER SPECIFIC STYLES***/
+
+#loginFooter
+{
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+
+#loginWelcome
+{
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
+/*     database_home.php styles     */
+
+#headerTitle
+{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  padding: 10px 0px 0px 0px; 
+}
+
+.list a:hover, .personSearchResult a:hover, .locationSearchResult a:hover, .assetSearchResult a:hover, .rowData a:hover, .listHeader a:hover, .assetList a:hover
+{
+  text-decoration: underline;
+  color: #f73737;
+}
+
+#pageContent
+{
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+/*     LIST STYLES     */
+
+/***GENERIC LIST STYLES***/
+
+#listHeader
+{
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 0px 0px 0px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+#listHeader a
+{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#listBanner
+{
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+  font-size: 14px;
+  background: #dadada;
+  padding: 5px 0px 5px 0px;
+}
+
+#listMain
+{
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.listRow, .listAssetRow, .listLocRow
+{
+  padding: 2px 0px 2px 0px;
+  cursor: default;
+}
+
+/*----------------------------INFO_ASSET.PHP STYLES---------------------------*/
+
+#indListHeader
+{
+  padding: 10px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+#indListHeader a
+{
+  font-size: 14px;
+  margin: 0px 10px 0px 10px;
+}
+
+.assetEditLink
+{
+  padding: 25px 0px 20px 0px;
+  text-align: center;
+}
+
+/*--------------------------INFO_LOCATION.PHP STYLES--------------------------*/
+
+#headerBody
+{
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.listLocRow
+{
+  cursor: default;
+}
+
+/*-------------------------EDIT PAGES GENERIC STYLES--------------------------*/
+
+#successMsg
+{
+  height: 20px;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+}
+
+/***EDIT_SOFTWARE.PHP SPECIFIC STYLES***/
+
+.softwareRow
+{
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+.listLocation
+{
+  margin: 10px 0px 15px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  font-variant: small-caps
+}
+
+/***EDIT_ASSET SPECIFIC STYLES***/
+
+#sideFormDiv
+{
+  width: 220px;
+  margin: 163px 0px 0px 0px;
+}
+
+/***EDIT_TONER.PHP SPECIFIC STYLES***/
+
+#tonerFooter
+{
+  margin: 0px 25px 0px 25px;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+/***info_asset/tonerList.PHP SPECIFIC STYLES***/
+
+#tonerArea
+{
+  margin: 15px 15px 0px 15px;
+  text-align: center;
+  padding: 0px 0px 25px 0px;
+}
+
+.tonerAddRow
+{
+  width: 365px;
+  margin: 10px auto 0px auto;
+}
+
+/***info_asset/softwareList.php SPECIFIC STYLES***/
+
+#softwareArea
+{
+  margin: 0px 20px 0px 20px;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+/*******************************TEXT PROPERTIES********************************/
+
+#softwareFooter, #printerAddList, .sideFormRowTitle, #personField, #assetField, #locationField
+{
+  text-align: center;
+}
+
+.list a, .personSearchResult a, .locationSearchResult a, .assetSearchResult a, .listHeader a, .assetList a
+{
+  text-decoration: none;
+}
+
+#indListHeader span, .personSearchResult, .locationSearchResult, .assetSearchResult
+{
+  font-size: 14px;
+}
+
+#tonerHeaderRow, #softwareHeaderRow
+{
+  font-weight: bold;
+}
+
+/*****************************BACKGROUND PROPERTIES****************************/
+
+.empAssetRow:hover, .listRow:hover, .listLocRow:hover, .listAssetRow:hover
+{
+  background: #d3d3d3;
+}
+
+/*******************************MARGIN PROPERTIES******************************/
+
+#searchFormArea
+{
+  margin: 10px auto 0px auto;
+}
+
+#listPeople, #listAssetNumber, #listLocation, .assetSoftwareListRow, #attachToner, .formRow, .assetCatFormRow, .loginFormRow, #softwareFooter
+{
+  margin: 10px 0px 0px 0px;
+}
+
+.sideFormRowInput
+{
+  margin: 10px 0px 10px 0px;
+}
+
+#assetInfo
+{
+  margin: 5px 15px 0px 15px;
+}
+
+#personField, #assetField, #locationField, #addNewSoftware, #formButtons input
+{
+  margin: 0px 15px 0px 0px;
+}
+
+#addNewMachine
+{
+  margin: 0px auto 10px auto;
+}
+
+#addSoftware
+{
+  margin: 0px 0px 10px 0px;
+}
+
+.assetInfoRow
+{
+  margin: 0px 0px 5px 0px;
+}
+
+#listArea
+{
+  margin: 0px 0px 0px 20px;
+}
+
+#addAreaFormSubmit, #listAreaFormSubmit, #asset_list
+{
+  margin: 0px 0px 0px 10px;
+}
+
+/*****************************DIV WIDTH ATTRIBUTES*****************************/
+
+#assetWrapper
+{
+  width: 1250px;
+}
+
+#locationWrapper
+{
+  width: 1100px;
+}
+
+#employeeWrapper
+{
+  width: 1075px; 
+}
+
+#softwareListWrapper
+{
+  width: 1000px;
+}
+
+#locAssetListWrapper
+{
+  width: 985px;
+}
+
+#tonerWrapper
+{
+  width: 925px;
+}
+
+#assetInfoWrapper
+{
+  width: 825px;
+}
+
+#empAssetListWrapper
+{
+  width: 775px;
+}
+
+#softwareList, #searchFormArea, #softwareLocalList
+{
+  width: 750px;
+}
+
+#vendorWrapper
+{
+  width: 720px;
+}
+
+#searchFields
+{
+  width: 700px;
+}
+
+.rowData
+{
+  width: 605px;
+}
+
+#addNewMachine
+{
+  width: 600px;
+}
+
+.locAddress
+{
+  width: 575px;
+}
+
+#softwareAddForm, #softwareForm, #assetCatForm, #editLocationWrapper, #mainFormDiv
+{
+  width: 550px;
+}
+
+#empForm, #manufacturerAddForm, #locAddForm, #modelWrapper
+{
+  width: 525px;
+}
+
+#tonerForm
+{
+  width: 515px;
+}
+
+#roleAddForm, #optionFormArea
+{
+  width: 500px;
+}
+
+#modelAddForm, #vendorAddForm
+{
+  width: 475px;
+}
+
+.modelName
+{
+  width: 450px;
+}
+
+#assetCatWrapper
+{
+  width: 425px;
+}
+
+.empModelList, .modelLocList, #manufacturerWrapper, #roleWrapper
+{
+  width: 400px;
+}
+
+.software, .softwareModel, #assetTonerFooter
+{
+  width: 375px;
+} 
+
+.formRow input
+{
+  width: 350px;
+}
+
+.assetCatDesc
+{
+  width: 340px;
+}
+
+.assetSoftwareDesc, .tonerDesc, #printerAddList, #pwChangeArea
+{
+  width: 325px;
+}
+
+.tonerPrinterLocation, .tonerModel, .manufacturerName, .departmentName
+{
+  width: 300px;
+}
+
+#assetCatEditButtons
+{
+  width: 280px;
+}
+
+.locDesc, .location
+{
+  width: 275px;
+}
+
+#manuEditButtons
+{
+  width: 265px;
+}
+
+#locationSearch, #locationField, .assetLocation
+{
+  width: 260px;
+}
+
+.assetSoftwareLicNum, #empEditButtons, .tonerDescSmall, .tonerModelSmall, .roleDesc, .vendorDesc, .vendorEmail
+{
+  width: 250px;
+} 
+
+#logInArea
+{
+  width: 245px;
+}
+
+#locEditButtons, #softwareEditButtons
+{
+  width: 240px;
+}
+
+.licenseNum
+{
+  width: 235px;
+}
+
+#vendorEditButtons, #roleEditButtons 
+{
+  width: 230px;  
+}
+
+#modelEditButtons, #tonerEditButtons
+{
+  width: 225px;
+}
+
+#assetEditButtons, .assetModel
+{
+  width: 220px;
+}
+
+.tonerPrinterUser, .tonerRowInput input, .softwareUser, .categoryLocList, .manufacturerLocList, #assetSearch, #assetField
+{
+  width: 200px;
+}
+
+.editRoles, .editVendor
+{
+  width: 180px;
+}
+
+.locPhone, .empName, .assetUser
+{
+  width: 175px;
+}
+
+#personSearch, #personField
+{
+  width: 165px;
+}
+
+.role
+{
+  width: 160px;
+}
+
+.tonerPrinterAddInfo, .assetRT, .vendorPhone, .loginFormInput input, .formChangePassword
+{
+  width: 150px;
+}
+
+.assetManufacturer, .assetVendor, .softwareRT
+{
+  width: 140px;
+}
+
+.notes
+{
+  width: 135px;
+}
+
+#changePWButton, #departmentRT
+{
+  width: 130px;  
+}
+
+.tonerRT, .empRT, .locationRT, .empManuList, .locEdit, .tonerRT
+{
+  width: 125px;
+}
+
+.numLicense
+{
+  width: 120px;
+}
+
+.deleteAsset, .numInStock
+{
+  width: 110px;
+}
+
+.assetSoftwareVersion, .tonerPrinterAssetNum, .softwareCompAssetNum, .vendorRT, .assetNumEmpList, .assetNumLocList, .softVersion, .nexNum, .office, .assetCategory, #formAddButtons
+{
+  width: 100px;
+}
+
+.nexID, .assetNum
+{
+  width: 95px;
+}
+
+#addMachineSubmit
+{
+  width: 90px;
+}
+
+.tonerPrice
+{
+  width: 85px;
+}
+
+#sideFormButtons
+{
+  width: 80px;
+}
+
+.softPrice, #clearButtonDiv, #formUsername, #formPassword
+{
+  width: 75px;
+}
+
+.extension
+{
+  width: 60px;
+}
+
+.nexSpeed, #formLogIn
+{
+  width: 50px;
+}
+
+.editManufacturer, #addAreaText, .editAsset, .editDepartment
+{
+   width: 45px;
+}
+
+.editToner, .editSoft, .editCatDesc, .editEmp
+{
+   width: 40px;
+}
+
+.moreInfo
+{
+  width: 35px;
+}                        

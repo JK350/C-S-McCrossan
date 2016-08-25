@@ -1,0 +1,54 @@
+#formWrapper
+{
+  width: 500px;
+}
+
+input.error, textarea.error
+{
+    background-color: #feff9f;
+}
+
+.required 
+{
+  background: #ffffff url(../images/required.gif) no-repeat top right;
+}
+
+input, textarea
+{
+	width: 250px;
+	margin-bottom: 5px;
+	border: 1px solid #4E9FC5;
+}
+
+textarea
+{
+	height: 60px;
+}
+
+input#contactPhone
+{
+	width: 150px;
+}
+
+input#formSubmit
+{
+	width: 75px;
+}
+
+label, p.formLabel
+{
+	float: left;
+	display: block;
+	width: 200px;
+}
+
+label.error
+{
+	color: #ff0000;
+}
+
+#formError
+{
+	color: #ff0000;
+	font-size: 9px;
+}

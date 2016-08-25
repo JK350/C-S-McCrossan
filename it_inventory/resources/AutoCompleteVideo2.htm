@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><!-- machid: iUGh4M2h2RTN2eDBPV3FJQ0hNUkxIX3hsdEhReUlpTVpzeUJzcnhKLWV5d1VSOGpiMHJlTm9n --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script data-loaded="true" src="AutoCompleteVideo2_files/www-searchbox-vfliI0gmd.js" id="scriptload-2681171587"></script>
+  
+        <script>
+var yt = yt || {};yt.timing = yt.timing || {};yt.timing.tick = function(label, opt_time) {var timer = yt.timing['timer'] || {};if(opt_time) {timer[label] = opt_time;}else {timer[label] = new Date().getTime();}yt.timing['timer'] = timer;};yt.timing.info = function(label, value) {var info_args = yt.timing['info_args'] || {};info_args[label] = value;yt.timing['info_args'] = info_args;};yt.timing.wff = true;yt.timing.info('an', "");yt.timing.tick('start');yt.timing.info('li','0');try {yt.timing['srt'] = window.gtbExternal && window.gtbExternal.pageT() ||window.external && window.external.pageT;} catch(e) {}if (window.chrome && window.chrome.csi) {yt.timing['srt'] = Math.floor(window.chrome.csi().pageT);}if (window.msPerformance && window.msPerformance.timing) {yt.timing['srt'] = window.msPerformance.timing.responseStart - window.msPerformance.timing.navigationStart;}    </script>
+
+<script>var yt = yt || {};yt.preload = {};yt.preload.counter_ = 0;yt.preload.start = function(src) {var img = new Image();var counter = ++yt.preload.counter_;yt.preload[counter] = img;img.onload = img.onerror = function () {delete yt.preload[counter];};img.src = src;img = null;};yt.preload.start("http:\/\/o-o.preferred.embarq-mco1.v9.lscache5.c.youtube.com\/crossdomain.xml");yt.preload.start("http:\/\/o-o.preferred.embarq-mco1.v9.lscache5.c.youtube.com\/generate_204?upn=vlxEkVsNJT8\u0026sparams=algorithm%2Cburst%2Ccp%2Cfactor%2Cid%2Cip%2Cipbits%2Citag%2Csource%2Cupn%2Cexpire\u0026algorithm=throttle-factor\u0026itag=34\u0026ip=138.0.0.0\u0026burst=40\u0026sver=3\u0026signature=870053F1623B51037E82A72599E411B9A6E5D631.0331ECDB5C0DED591D9EC9451320CEF4B5C63CF8\u0026source=youtube\u0026expire=1335572782\u0026key=yt1\u0026ipbits=8\u0026factor=1.25\u0026cp=U0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL\u0026id=f269c027820c820a");</script>
+    <title>
+        jQuery PHP Search Box Revisited PART 2
+      - YouTube
+  </title>
+
+    
+  <link rel="search" type="application/opensearchdescription+xml" href="http://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search">
+
+  <link rel="icon" href="http://s.ytimg.com/yt/favicon-refresh-vfldLzJxy.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://s.ytimg.com/yt/favicon-refresh-vfldLzJxy.ico" type="image/x-icon"> 
+    <link rel="canonical" href="http://www.youtube.com/watch?v=8mnAJ4IMggo">
+    <link rel="alternate" media="handheld" href="http://m.youtube.com/watch?desktop_uri=%2Fwatch%3Fv%3D8mnAJ4IMggo%26feature%3Drelmfu&amp;feature=relmfu&amp;v=8mnAJ4IMggo&amp;gl=US">
+    <link rel="shortlink" href="http://youtu.be/8mnAJ4IMggo">
+      <meta name="title" content="jQuery PHP Search Box Revisited PART 2">
+
+
+      <meta name="description" content="In this tutorial series i will cover my original jQuery PHP Search Box tutorial that uses MYSQLI, this version of the search box uses MYSQL.">
+
+
+      <meta name="keywords" content="php, mysql, search box, jquery, ajax">
+
+
+    
+  <link rel="alternate" type="application/json+oembed" href="http://www.youtube.com/oembed?url=%2Fwatch%3Fv%3D8mnAJ4IMggo&amp;format=json" title="jQuery PHP Search Box Revisited PART 2">
+  <link rel="alternate" type="text/xml+oembed" href="http://www.youtube.com/oembed?url=%2Fwatch%3Fv%3D8mnAJ4IMggo&amp;format=xml" title="jQuery PHP Search Box Revisited PART 2">
+
+      <meta property="fb:app_id" content="87741124305">
+    <meta property="og:url" content="http://www.youtube.com/watch?v=8mnAJ4IMggo">
+    <meta property="og:title" content="jQuery PHP Search Box Revisited PART 2">
+    <meta property="og:description" content="In this tutorial series i will cover my original jQuery PHP Search Box tutorial that uses MYSQLI, this version of the search box uses MYSQL.">
+    <meta property="og:type" content="video">
+    <meta property="og:image" content="http://i1.ytimg.com/vi/8mnAJ4IMggo/hqdefault.jpg">
+      <meta property="og:video" content="http://www.youtube.com/v/8mnAJ4IMggo?version=3&amp;autohide=1">
+      <meta property="og:video:type" content="application/x-shockwave-flash">
+      <meta property="og:video:width" content="398">
+      <meta property="og:video:height" content="224">
+    <meta property="og:site_name" content="YouTube">
+
+  
+
+
+  
+
+    <link id="www-core-css" rel="stylesheet" href="AutoCompleteVideo2_files/www-core-vfl3G5ozX.css">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <style>
+    .video-list-item .ux-thumb-wrap .video-count {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 2px;
+        background: #000;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-weight: normal;
+        font-size: 90%;
+        line-height: 1;
+        text-align: center;
+    }
+    .video-list-item .ux-thumb-wrap .video-count strong {
+      display: block;
+    }
+    .video-list-item .thumb-row .video-thumb {
+      margin-right: 5px;
+    }
+  </style>
+
+
+
+
+
+
+    
+  
+
+
+
+    <script>
+    var gYouTubePlayerReady = false;
+    if (!window['onYouTubePlayerReady']) {
+      window['onYouTubePlayerReady'] = function() {
+        gYouTubePlayerReady = true;
+      };
+    }
+  </script>
+      <script>
+      if (window.yt.timing) {
+        yt.timing.tick("ct");
+      }
+    </script>
+
+
+<style type="text/css">.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_m{color:#000;background:#fff}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}a.gspqs_a{padding:0 3px 0 8px}.gspqs_b{color:#666;line-height:22px}.gsq_a{padding:0}.gspr_a{padding-right:1px}.gsok_a{background:url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) no-repeat center;cursor:pointer;display:inline-block;height:11px;line-height:0;margin:0 3px;width:19px}.gsst_a,.gsst_d{display:inline-block}.gsst_a{padding:0 1px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 3px;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_d{width:3px}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsfi{font-size:13px}.gsfs{font-size:13px}a.gssb_j{font-size:12px;color:#03c}.gssb_a,.gssb_a td{line-height:17px}.gssb_a{padding:0 5px}.gssb_c{z-index:3000001}.gssb_i td{background:#eee}.gssb_k{z-index:3000000}.gsfe_b{border:1px solid #1c62b9;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);outline:none;}</style></head>
+  <body id="" class="date-20120426 en_US ltr  " dir="ltr">
+
+  <form name="logoutForm" method="POST" action="/">
+    <input name="action_logout" value="1" type="hidden">
+  <input value="NGyOJrTUaEJ_HxKbRW8eBPg5e0t8MTMzNTYzMzQ1M0AxMzM1NTQ3MDUz" name="session_token" type="hidden"></form>
+  <!-- begin page -->
+  <div id="page" class="  watch  ">
+      
+  <div id="masthead-container">
+    <!-- begin masthead -->
+      <div id="masthead" class="" dir="ltr">
+          <a id="logo-container" href="http://www.youtube.com/" title="YouTube home">
+    <img id="logo" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="YouTube home">
+  </a>
+
+
+    <div id="masthead-user-bar-container">
+      <div id="masthead-user-bar">
+        <div id="masthead-user">
+          <div id="masthead-user-display"><a class="start" href="http://www.youtube.com/signup?feature=header&amp;next=%2Fwatch%3Fv%3D8mnAJ4IMggo%26feature%3Drelmfu">Create Account</a><span class="masthead-link-separator">|</span><a class="end" href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dheader%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu&amp;hl=en_US&amp;ltmpl=sso">Sign In</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="masthead-search-bar-container">
+      <div id="masthead-search-bar">
+<div id="masthead-nav"><a href="http://www.youtube.com/videos?feature=mh">Browse</a><span class="masthead-link-separator">|</span><a href="http://www.youtube.com/movies?feature=mh">Movies</a>                <span class="masthead-link-separator">|</span><a id="masthead-upload-link" href="http://www.youtube.com/my_videos_upload">Upload</a></div>        
+
+
+  <form id="masthead-search" class="search-form consolidated-form" action="/results" onsubmit="if (_gel('masthead-search-term').value == '') return false;">
+<button class="search-btn-compontent search-button yt-uix-button yt-uix-button-default" onclick="if (_gel('masthead-search-term').value == '') return false; _gel('masthead-search').submit(); return false;;return true;" type="submit" id="search-btn" dir="ltr" tabindex="2" role="button"><span class="yt-uix-button-content">Search </span></button><div id="masthead-search-terms" class="masthead-search-terms-border " dir="ltr"><label><input style="outline: medium none;" spellcheck="false" dir="ltr" id="masthead-search-term" autocomplete="off" class="search-term" name="search_query" tabindex="1" onkeyup="goog.i18n.bidi.setDirAttribute(event,this)" title="Search" type="text"></label></div>  <input name="oq" type="hidden"><input name="aq" type="hidden"><input name="aqi" type="hidden"><input name="aql" type="hidden"><input name="gs_l" type="hidden"></form>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+    <div id="alerts">
+
+</div>
+    <!-- end masthead -->
+  </div>
+  <div id="content-container">
+    <!-- begin content -->
+    <div id="content">
+      
+<div id="watch-container" itemscope="" itemtype="http://schema.org/VideoObject">
+      <link itemprop="url" href="http://www.youtube.com/watch?v=8mnAJ4IMggo">
+    <meta itemprop="name" content="jQuery PHP Search Box Revisited PART 2">
+    <meta itemprop="description" content="In this tutorial series i will cover my original jQuery PHP Search Box tutorial that uses MYSQLI, this version of the search box uses MYSQL.">
+      <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <link itemprop="url" href="http://www.youtube.com/user/MrDualChart">
+      </div>
+    <link itemprop="thumbnailUrl" href="http://i1.ytimg.com/vi/8mnAJ4IMggo/hqdefault.jpg">
+      <link itemprop="embedURL" href="http://www.youtube.com/v/8mnAJ4IMggo?version=3&amp;autohide=1">
+      <meta itemprop="playerType" content="Flash">
+      <meta itemprop="width" content="1280">
+      <meta itemprop="height" content="720">
+
+
+  <!-- begin watch-headline-container -->
+  <div id="watch-headline-container">
+      <div id="watch-headline" class="watch-headline">
+      
+
+
+
+    <h1 id="watch-headline-title">
+      
+
+
+  <span id="eow-title" class="" dir="ltr" title="jQuery PHP Search Box Revisited PART 2">
+    jQuery PHP Search Box Revisited PART 2
+  </span>
+
+    </h1>
+
+    <div id="watch-headline-user-info">
+        <span class="yt-uix-button-group"><button href="/user/MrDualChart?feature=watch" type="button" class="start yt-uix-button yt-uix-button-default" onclick=";window.location.href=this.getAttribute('href');return false;" role="button"><span class="yt-uix-button-content">MrDualChart </span></button><div class="yt-subscription-button-hovercard yt-uix-hovercard" data-card-class="watch-subscription-card"><button data-subscription-initialized="true" href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dsubscribe_button%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu&amp;hl=en_US&amp;ltmpl=sso" onclick=";window.location.href=this.getAttribute('href');return false;" title="" type="button" class="yt-subscription-button yt-subscription-button-js-default end yt-uix-button yt-uix-button-default yt-uix-tooltip" data-enable-hovercard="true" data-subscription-value="Y6Muvbf0f-mjZPCzRPY2dg" data-force-position="true" data-position="topright" data-subscription-feature="watch" data-subscription-type="" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-subscribe" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-content">  <span class="subscribe-label">Subscribe</span>
+  <span class="subscribed-label">Subscribed</span>
+  <span class="unsubscribe-label">Unsubscribe</span>
+ </span></button><div class="yt-uix-hovercard-content hid">  <p class="loading-spinner">
+    <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="">
+Loading...
+  </p>
+</div></div></span><button onclick="_toggleclass(this,'yt-uix-expander-collapsed');return false;" type="button" id="watch-mfu-button" class="yt-uix-expander-collapsed yt-uix-button yt-uix-button-default" data-button-toggle="true" data-video-user-id="Y6Muvbf0f-mjZPCzRPY2dg" data-button-menu-id="some-nonexistent-menu" data-video-id="8mnAJ4IMggo" data-button-action="yt.www.watch.watch5.handleToggleMoreFromUser" role="button"><span class="yt-uix-button-content">24 videos </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+    </div>
+
+    <div id="watch-more-from-user" class="collapsed">
+      <div id="watch-channel-discoverbox" class="yt-rounded">
+        <span id="watch-channel-loading">Loading...</span>
+      </div>
+    </div>
+
+
+  </div>
+
+  </div>
+  <!-- end watch-headline-container -->
+  <div id="watch-video-container">
+    <div class="" id="watch-video">
+          <script>
+      if (window.yt.timing) {
+        yt.timing.tick("bf");
+      }
+    </script>
+
+          <div style="background: none repeat scroll 0% 0% transparent;" id="watch-player" class="flash-player">      <embed type="application/x-shockwave-flash" src="AutoCompleteVideo2_files/watch_as3-vflCBBX6J.swf" id="movie_player" flashvars="ttsurl=http%3A%2F%2Fwww.youtube.com%2Fapi%2Ftimedtext%3Fsparams%3Dasr_langs%252Ccaps%252Cv%252Cexpire%26asr_langs%3Den%252Cko%252Cja%26v%3D8mnAJ4IMggo%26caps%3Dasr%26expire%3D1335572253%26key%3Dyttt1%26signature%3D3DAFAD25117E4558F9A71BC837906BC2598D42F7.C74E3C95652F5BB16A76373DCFE04C359E71777D%26hl%3Den_US&amp;fexp=&amp;enablecsi=1&amp;allow_embed=1&amp;rvs=view_count%3D822%26author%3DMrDualChart%26length_seconds%3D862%26id%3DSYY6lC9WDaw%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BRevisited%2BPART%2B1%2Cview_count%3D2%252C352%26author%3DMrDualChart%26length_seconds%3D897%26id%3DnbrueXmgPZc%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B3%2Cview_count%3D1%252C551%26author%3DMrDualChart%26length_seconds%3D589%26id%3D2wqXhHTlcFg%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B2%2Cview_count%3D4%252C009%26author%3DMrDualChart%26length_seconds%3D887%26id%3DBd-niZKkOLE%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B1%2Cview_count%3D22%252C174%26author%3Doptikalefxx%26length_seconds%3D596%26id%3DIrFxLOffgNg%26title%3Dlogin%2Bscript%2Bwith%2Bjquery%2Band%2Bphp%2Cview_count%3D129%252C239%26author%3DRiverCityGraphix%26length_seconds%3D685%26id%3DnBz2lG_jm-A%26title%3DPHP%2BMySQL%2BTutorial%253A%2BCreate%2Ba%2BDatabase%2Band%2BTable%2Bin%2BphpMyAdmin%2B-HD-%2Cview_count%3D5%252C155%26author%3Dphpacademy%26length_seconds%3D412%26id%3D3FVQRoMZPMs%26title%3DPHP%2BTutorials%253A%2BSearch%2BEngine%2B%2528Part%2B7%252F8%2529%2Cview_count%3D2%252C715%26author%3Dkydkobra89%26length_seconds%3D3349%26id%3DHoiA5Z69P1M%26title%3DjQuery%2Bautosuggest%2Bwith%2BPHP%252FMYSQL%2Cview_count%3D11%252C423%26author%3Dxymind%26length_seconds%3D617%26id%3DDqsBZSq-3c0%26title%3DConexi%25C3%25B3n%2Ba%2BBases%2Bde%2Bdatos%2Bcon%2BPHP%2By%2BMySQL%2Bparte%2B1%2B%2528Crear%2Bbase%2Bde%2Bdatos%2529%2Cview_count%3D274%26author%3DSlothScripts%26length_seconds%3D915%26id%3DF2Absx2QYYI%26title%3DPHP%2BTutorials%253A%2BMulti-Site%2BSearch%2B%255BPart%2BThree%2B%25283%2529%255D%2Cview_count%3D10%252C843%26author%3Dmosleh1130%26length_seconds%3D653%26id%3DTzuuh6wSijo%26title%3DHow%2Bto%2Bcreate%2Ba%2Bsearch%2Bengine%2Bin%2BPHP%2Bwith%2Bsource%2Bcode%2Cview_count%3D593%26author%3Dtheartofcode%26length_seconds%3D446%26id%3D9dAEagOyJI0%26title%3DjQuery%2B%253A%253A%2BSimple%2BAJAX%2BCalls&amp;vq=auto&amp;account_playback_token=&amp;autohide=2&amp;csi_page_type=watch5&amp;keywords=php%2Cmysql%2Csearch+box%2Cjquery%2Cajax&amp;cr=US&amp;cc3_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fsubtitles3_module-vflavP5U6.swf&amp;fmt_list=45%2F1280x720%2F99%2F0%2F0%2C22%2F1280x720%2F9%2F0%2F115%2C35%2F854x480%2F9%2F0%2F115%2C43%2F640x360%2F99%2F0%2F0%2C34%2F640x360%2F9%2F0%2F115%2C18%2F640x360%2F9%2F0%2F115%2C5%2F320x240%2F7%2F0%2F0&amp;length_seconds=411&amp;feature=relmfu&amp;enablejsapi=1&amp;plid=AAS-rEeu2jrzYXjA&amp;cc_font=Arial+Unicode+MS%2C+arial%2C+verdana%2C+_sans&amp;sdetail=f%3Arelmfu%2Crv%3ASYY6lC9WDaw&amp;tabsb=1&amp;url_encoded_fmt_stream_map=url%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v18.lscache3.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D45%2526ip%253D138.0.0.0%2526signature%253D6E3889489F5E8955EFB0A950530CC44BF3AE6302.9E7851B5BA3BFFAE62D8CC9D80140E202CC13EA8%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dhd720%26fallback_host%3Dtc.v18.cache3.c.youtube.com%26type%3Dvideo%252Fwebm%253B%2Bcodecs%253D%2522vp8.0%252C%2Bvorbis%2522%26itag%3D45%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v1.lscache5.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D22%2526ip%253D138.0.0.0%2526signature%253D4464E0F25D5D1C29DB5A2F75333EC9EFE078E92A.1CD87860916F7460376D90305379123E67C4B176%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dhd720%26fallback_host%3Dtc.v1.cache5.c.youtube.com%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.64001F%252C%2Bmp4a.40.2%2522%26itag%3D22%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v14.lscache1.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D35%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D1247C29D599F1CB91F57A9104A5E595C2DF993E8.9D20CDF85B74745657C0DD12162F87AA52D6E41C%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dlarge%26fallback_host%3Dtc.v14.cache1.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D35%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v20.lscache6.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D43%2526ip%253D138.0.0.0%2526signature%253D1E01891C83340DE6256C9DA53B158DB2DBE07076.498756F1F167FFD8BB68BAF5868F4A00FD7E0152%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v20.cache6.c.youtube.com%26type%3Dvideo%252Fwebm%253B%2Bcodecs%253D%2522vp8.0%252C%2Bvorbis%2522%26itag%3D43%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v9.lscache5.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D34%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D870053F1623B51037E82A72599E411B9A6E5D631.0331ECDB5C0DED591D9EC9451320CEF4B5C63CF8%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v9.cache5.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D34%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v20.lscache4.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D18%2526ip%253D138.0.0.0%2526signature%253DC402F6C9D9E1009227BC43A2891FAE21AB601074.2C97F8BCE8173079C3ABD7A1E3FAB754B1E94084%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v20.cache4.c.youtube.com%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.42001E%252C%2Bmp4a.40.2%2522%26itag%3D18%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v13.lscache4.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D5%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D85D816FC7A819864B129C5826A69535DDEF78DBE.A993EF6760067B5E94619C12C9DA8B0EE2019F3F%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dsmall%26fallback_host%3Dtc.v13.cache4.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D5&amp;watermark=%2Chttp%3A%2F%2Fs.ytimg.com%2Fyt%2Fimg%2Fwatermark%2Fyoutube_watermark-vflHX6b6E.png%2Chttp%3A%2F%2Fs.ytimg.com%2Fyt%2Fimg%2Fwatermark%2Fyoutube_hd_watermark-vflAzLcD6.png&amp;sourceid=yw&amp;timestamp=1335547053&amp;storyboard_spec=http%3A%2F%2Fi1.ytimg.com%2Fsb%2F8mnAJ4IMggo%2Fstoryboard3_L%24L%2F%24N.jpg%7C48%2327%23100%2310%2310%230%23default%23_Mqn9feg-_unUcWS9uAfsOIhCeA%7C80%2345%2384%2310%2310%235000%23M%24M%23BONAYyQX3q55j3m_x1XyMB5_qdY%7C160%2390%2384%235%235%235000%23M%24M%231iLWCS3YrTRoHeurXx7KVoUApVA%7C320%23180%2384%233%233%235000%23M%24M%23BCwfWB4kHujpbYDRXscGP0w-tlg&amp;cc_asr=1&amp;showpopout=1&amp;hl=en_US&amp;tmi=1&amp;no_get_video_log=1&amp;cc_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fsubtitle_module-vflM6Xy-l.swf&amp;endscreen_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fendscreen-vfl7fuYJn.swf&amp;supersizefeatured=1&amp;is_doubleclick_tracked=1&amp;referrer=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSYY6lC9WDaw%26feature%3Drelmfu&amp;video_id=8mnAJ4IMggo&amp;sendtmp=1&amp;sk=q9iOqn0y66S6d4CNCZCxGckUNGlAnnATC&amp;t=vjVQa1PpcFOmSKKZfyJe-VUfts57lRTdXNyKLRzBin8%3D" allowscriptaccess="always" allowfullscreen="true" bgcolor="#000000" height="390" width="640">
+  <noembed>&lt;div class="yt-alert yt-alert-default yt-alert-error  
+yt-alert-player"&gt;&lt;div class="yt-alert-icon"&gt;&lt;img 
+src="//s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" class="icon 
+master-sprite" alt="Alert icon"&gt;&lt;/div&gt;&lt;div 
+class="yt-alert-buttons"&gt;&lt;/div&gt;&lt;div 
+class="yt-alert-content"&gt;    &lt;span 
+class="yt-alert-vertical-trick"&gt;&lt;/span&gt;
+    &lt;div class="yt-alert-message"&gt;
+          You need Adobe Flash Player to watch this video. &lt;br&gt; 
+&lt;a href="http://get.adobe.com/flashplayer/"&gt;Download it from 
+Adobe.&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</noembed>
+
+</div>
+    <script>
+      (function() {
+        var swf = "      \u003cembed type=\"application\/x-shockwave-flash\"     s\u0072c=\"http:\/\/s.ytimg.com\/yt\/swfbin\/watch_as3-vflCBBX6J.swf\"     w\u0069dth=\"640\" id=\"movie_player\" h\u0065ight=\"390\"    flashvars=\"ttsurl=http%3A%2F%2Fwww.youtube.com%2Fapi%2Ftimedtext%3Fsparams%3Dasr_langs%252Ccaps%252Cv%252Cexpire%26asr_langs%3Den%252Cko%252Cja%26v%3D8mnAJ4IMggo%26caps%3Dasr%26expire%3D1335572253%26key%3Dyttt1%26signature%3D3DAFAD25117E4558F9A71BC837906BC2598D42F7.C74E3C95652F5BB16A76373DCFE04C359E71777D%26hl%3Den_US\u0026amp;fexp=\u0026amp;enablecsi=1\u0026amp;allow_embed=1\u0026amp;rvs=view_count%3D822%26author%3DMrDualChart%26length_seconds%3D862%26id%3DSYY6lC9WDaw%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BRevisited%2BPART%2B1%2Cview_count%3D2%252C352%26author%3DMrDualChart%26length_seconds%3D897%26id%3DnbrueXmgPZc%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B3%2Cview_count%3D1%252C551%26author%3DMrDualChart%26length_seconds%3D589%26id%3D2wqXhHTlcFg%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B2%2Cview_count%3D4%252C009%26author%3DMrDualChart%26length_seconds%3D887%26id%3DBd-niZKkOLE%26title%3DjQuery%2BPHP%2BSearch%2BBox%2BTutorial%2BPart%2B1%2Cview_count%3D22%252C174%26author%3Doptikalefxx%26length_seconds%3D596%26id%3DIrFxLOffgNg%26title%3Dlogin%2Bscript%2Bwith%2Bjquery%2Band%2Bphp%2Cview_count%3D129%252C239%26author%3DRiverCityGraphix%26length_seconds%3D685%26id%3DnBz2lG_jm-A%26title%3DPHP%2BMySQL%2BTutorial%253A%2BCreate%2Ba%2BDatabase%2Band%2BTable%2Bin%2BphpMyAdmin%2B-HD-%2Cview_count%3D5%252C155%26author%3Dphpacademy%26length_seconds%3D412%26id%3D3FVQRoMZPMs%26title%3DPHP%2BTutorials%253A%2BSearch%2BEngine%2B%2528Part%2B7%252F8%2529%2Cview_count%3D2%252C715%26author%3Dkydkobra89%26length_seconds%3D3349%26id%3DHoiA5Z69P1M%26title%3DjQuery%2Bautosuggest%2Bwith%2BPHP%252FMYSQL%2Cview_count%3D11%252C423%26author%3Dxymind%26length_seconds%3D617%26id%3DDqsBZSq-3c0%26title%3DConexi%25C3%25B3n%2Ba%2BBases%2Bde%2Bdatos%2Bcon%2BPHP%2By%2BMySQL%2Bparte%2B1%2B%2528Crear%2Bbase%2Bde%2Bdatos%2529%2Cview_count%3D274%26author%3DSlothScripts%26length_seconds%3D915%26id%3DF2Absx2QYYI%26title%3DPHP%2BTutorials%253A%2BMulti-Site%2BSearch%2B%255BPart%2BThree%2B%25283%2529%255D%2Cview_count%3D10%252C843%26author%3Dmosleh1130%26length_seconds%3D653%26id%3DTzuuh6wSijo%26title%3DHow%2Bto%2Bcreate%2Ba%2Bsearch%2Bengine%2Bin%2BPHP%2Bwith%2Bsource%2Bcode%2Cview_count%3D593%26author%3Dtheartofcode%26length_seconds%3D446%26id%3D9dAEagOyJI0%26title%3DjQuery%2B%253A%253A%2BSimple%2BAJAX%2BCalls\u0026amp;vq=auto\u0026amp;account_playback_token=\u0026amp;autohide=2\u0026amp;csi_page_type=watch5\u0026amp;keywords=php%2Cmysql%2Csearch+box%2Cjquery%2Cajax\u0026amp;cr=US\u0026amp;cc3_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fsubtitles3_module-vflavP5U6.swf\u0026amp;fmt_list=45%2F1280x720%2F99%2F0%2F0%2C22%2F1280x720%2F9%2F0%2F115%2C35%2F854x480%2F9%2F0%2F115%2C43%2F640x360%2F99%2F0%2F0%2C34%2F640x360%2F9%2F0%2F115%2C18%2F640x360%2F9%2F0%2F115%2C5%2F320x240%2F7%2F0%2F0\u0026amp;length_seconds=411\u0026amp;feature=relmfu\u0026amp;enablejsapi=1\u0026amp;plid=AAS-rEeu2jrzYXjA\u0026amp;cc_font=Arial+Unicode+MS%2C+arial%2C+verdana%2C+_sans\u0026amp;sdetail=f%3Arelmfu%2Crv%3ASYY6lC9WDaw\u0026amp;tabsb=1\u0026amp;url_encoded_fmt_stream_map=url%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v18.lscache3.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D45%2526ip%253D138.0.0.0%2526signature%253D6E3889489F5E8955EFB0A950530CC44BF3AE6302.9E7851B5BA3BFFAE62D8CC9D80140E202CC13EA8%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dhd720%26fallback_host%3Dtc.v18.cache3.c.youtube.com%26type%3Dvideo%252Fwebm%253B%2Bcodecs%253D%2522vp8.0%252C%2Bvorbis%2522%26itag%3D45%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v1.lscache5.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D22%2526ip%253D138.0.0.0%2526signature%253D4464E0F25D5D1C29DB5A2F75333EC9EFE078E92A.1CD87860916F7460376D90305379123E67C4B176%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dhd720%26fallback_host%3Dtc.v1.cache5.c.youtube.com%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.64001F%252C%2Bmp4a.40.2%2522%26itag%3D22%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v14.lscache1.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D35%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D1247C29D599F1CB91F57A9104A5E595C2DF993E8.9D20CDF85B74745657C0DD12162F87AA52D6E41C%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dlarge%26fallback_host%3Dtc.v14.cache1.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D35%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v20.lscache6.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D43%2526ip%253D138.0.0.0%2526signature%253D1E01891C83340DE6256C9DA53B158DB2DBE07076.498756F1F167FFD8BB68BAF5868F4A00FD7E0152%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v20.cache6.c.youtube.com%26type%3Dvideo%252Fwebm%253B%2Bcodecs%253D%2522vp8.0%252C%2Bvorbis%2522%26itag%3D43%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v9.lscache5.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D34%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D870053F1623B51037E82A72599E411B9A6E5D631.0331ECDB5C0DED591D9EC9451320CEF4B5C63CF8%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v9.cache5.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D34%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v20.lscache4.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526itag%253D18%2526ip%253D138.0.0.0%2526signature%253DC402F6C9D9E1009227BC43A2891FAE21AB601074.2C97F8BCE8173079C3ABD7A1E3FAB754B1E94084%2526sver%253D3%2526ratebypass%253Dyes%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dmedium%26fallback_host%3Dtc.v20.cache4.c.youtube.com%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.42001E%252C%2Bmp4a.40.2%2522%26itag%3D18%2Curl%3Dhttp%253A%252F%252Fo-o.preferred.embarq-mco1.v13.lscache4.c.youtube.com%252Fvideoplayback%253Fupn%253DvlxEkVsNJT8%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526algorithm%253Dthrottle-factor%2526itag%253D5%2526ip%253D138.0.0.0%2526burst%253D40%2526sver%253D3%2526signature%253D85D816FC7A819864B129C5826A69535DDEF78DBE.A993EF6760067B5E94619C12C9DA8B0EE2019F3F%2526source%253Dyoutube%2526expire%253D1335572782%2526key%253Dyt1%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%2526id%253Df269c027820c820a%26quality%3Dsmall%26fallback_host%3Dtc.v13.cache4.c.youtube.com%26type%3Dvideo%252Fx-flv%26itag%3D5\u0026amp;watermark=%2Chttp%3A%2F%2Fs.ytimg.com%2Fyt%2Fimg%2Fwatermark%2Fyoutube_watermark-vflHX6b6E.png%2Chttp%3A%2F%2Fs.ytimg.com%2Fyt%2Fimg%2Fwatermark%2Fyoutube_hd_watermark-vflAzLcD6.png\u0026amp;sourceid=yw\u0026amp;timestamp=1335547053\u0026amp;storyboard_spec=http%3A%2F%2Fi1.ytimg.com%2Fsb%2F8mnAJ4IMggo%2Fstoryboard3_L%24L%2F%24N.jpg%7C48%2327%23100%2310%2310%230%23default%23_Mqn9feg-_unUcWS9uAfsOIhCeA%7C80%2345%2384%2310%2310%235000%23M%24M%23BONAYyQX3q55j3m_x1XyMB5_qdY%7C160%2390%2384%235%235%235000%23M%24M%231iLWCS3YrTRoHeurXx7KVoUApVA%7C320%23180%2384%233%233%235000%23M%24M%23BCwfWB4kHujpbYDRXscGP0w-tlg\u0026amp;cc_asr=1\u0026amp;showpopout=1\u0026amp;hl=en_US\u0026amp;tmi=1\u0026amp;no_get_video_log=1\u0026amp;cc_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fsubtitle_module-vflM6Xy-l.swf\u0026amp;endscreen_module=http%3A%2F%2Fs.ytimg.com%2Fyt%2Fswfbin%2Fendscreen-vfl7fuYJn.swf\u0026amp;supersizefeatured=1\u0026amp;is_doubleclick_tracked=1\u0026amp;referrer=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSYY6lC9WDaw%26feature%3Drelmfu\u0026amp;video_id=8mnAJ4IMggo\u0026amp;sendtmp=1\u0026amp;sk=q9iOqn0y66S6d4CNCZCxGckUNGlAnnATC\u0026amp;t=vjVQa1PpcFOmSKKZfyJe-VUfts57lRTdXNyKLRzBin8%3D\"     allowscriptaccess=\"always\" allowfullscreen=\"true\" bgcolor=\"#000000\"\u003e\n  \u003cnoembed\u003e\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e\u003cdiv class=\"yt-alert-icon\"\u003e\u003cimg s\u0072c=\"\/\/s.ytimg.com\/yt\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n          You need Adobe Flash Player to watch this video. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eDownload it from Adobe.\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e\u003c\/noembed\u003e\n\n";
+        document.getElementById('watch-player').innerHTML = swf;
+      })()
+    </script>
+
+      <!-- begin watch-video-extra -->
+      <div id="watch-video-extra">
+        
+        
+      </div>
+      <!-- end watch-video-extra -->
+    </div>
+  </div>
+  <!-- begin watch-main-container -->
+  <div id="watch-main-container">
+    <div id="watch-main">
+      <div id="watch-panel">
+            <div class="yt-alert yt-alert-default yt-alert-warn hid " id="flash10-promo-div"><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-buttons">  <button type="button" class="close yt-uix-close yt-uix-button yt-uix-button-close" onclick=";return false;" data-close-parent-class="yt-alert" role="button"><span class="yt-uix-button-content">Close </span></button>
+</div><div class="yt-alert-content">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+          Upgrade to the latest Flash Player for improved playback performance. <a href="http://www.adobe.com/go/getflashplayer/" onmousedown="urchinTracker('/Events/VideoWatch/GetFlashUpgrade');">Upgrade now</a> or <a href="http://support.google.com/youtube/bin/answer.py?answer=95402">more info</a>.
+    </div>
+</div></div>
+
+
+  <div id="watch-actions">
+          <div id="watch-actions-right">
+    <span class="watch-view-count">
+      <strong>576</strong>
+views
+    </span>
+    <button onclick=";return false;" title="Show video statistics" type="button" id="watch-insight-button" class="yt-uix-tooltip yt-uix-tooltip-reverse yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" data-button-action="yt.www.watch.actions.stats" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-insight" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Show video statistics"></button>
+  </div>
+
+    
+
+    <span id="watch-like-unlike" class="yt-uix-button-group " data-button-toggle-group="optional"><button data-tooltip-text="I like this" onclick=";return false;" title="I like this" type="button" class="start yt-uix-tooltip-reverse  yt-uix-button yt-uix-button-default yt-uix-tooltip" id="watch-like" data-button-toggle="true" data-button-action="yt.www.watch.actions.like" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-like" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="I like this"><span class="yt-uix-button-content">Like </span></button><button data-tooltip-text="I dislike this" onclick=";return false;" title="I dislike this" type="button" class="end yt-uix-tooltip-reverse  yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" id="watch-unlike" data-button-toggle="true" data-button-action="yt.www.watch.actions.unlike" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-unlike" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="I dislike this"></button></span>
+
+
+    <button data-tooltip-text="Share or embed this video" onclick=";return false;" title="Share or embed this video" type="button" class="yt-uix-tooltip-reverse yt-uix-button yt-uix-button-default yt-uix-tooltip" id="watch-share" data-button-action="yt.www.watch.actions.share" role="button"><span class="yt-uix-button-content">Share </span></button>
+
+    <button data-tooltip-text="Flag as inappropriate" onclick=";return false;" title="Flag as inappropriate" type="button" class="yt-uix-tooltip-reverse  yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" id="watch-flag" data-button-action="yt.www.watch.actions.flag" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-flag" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Flag as inappropriate"></button>
+
+
+
+
+  </div>
+
+    
+
+  <div id="watch-actions-area-container" class="hid">
+    <div id="watch-actions-area" class="yt-rounded">
+        <div id="watch-actions-loading" class="watch-actions-panel hid">
+Loading...
+  </div>
+      <div id="watch-actions-logged-out" class="watch-actions-panel hid">
+      <div class="yt-alert yt-alert-naked yt-alert-warn  "><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-content">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+            <strong>
+      <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu&amp;hl=en_US&amp;ltmpl=sso">Sign in</a> or <a href="http://www.youtube.com/signup?next=%2Fwatch%3Fv%3D8mnAJ4IMggo%26feature%3Drelmfu">sign up</a> now!
+    
+</strong>
+
+    </div>
+</div></div>
+  </div>
+
+
+    <div id="watch-actions-error" class="watch-actions-panel hid">
+    <div class="yt-alert yt-alert-naked yt-alert-error  "><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-content" id="watch-error-string"></div></div>
+  </div>
+
+
+  <div id="watch-actions-addto" class="watch-actions-panel hid"></div>
+
+    <div id="watch-actions-share" class="watch-actions-panel hid">
+    <div id="watch-actions-share-loading">
+Loading...
+    </div>
+    <div id="watch-actions-share-panel" class="hid"></div>
+  </div>
+
+
+
+
+
+  <div id="watch-actions-ajax" class="watch-actions-panel hid"></div>
+
+  <div class="close">
+    <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="close-button" onclick="yt.www.watch.actions.hide();">
+  </div>
+
+    </div>
+  </div>
+
+  <div id="watch-info">
+    
+  <div id="watch-description" class="watch-expander yt-uix-expander  yt-uix-expander-collapsed" data-expander-action="yt.www.watch.watch5.handleToggleDescription">
+    <div id="watch-description-clip">
+      <p id="watch-uploader-info">
+        
+Uploaded by     <a href="http://www.youtube.com/user/MrDualChart" class="yt-user-name author" rel="author" dir="ltr">MrDualChart</a>
+ on <span id="eow-date" class="watch-video-date">May  4, 2011</span>
+
+      </p>
+      <div id="watch-description-text">
+        <p id="eow-description">In this tutorial series i will cover my 
+original jQuery PHP Search Box tutorial that uses MYSQLI, this version 
+of the search box uses MYSQL.</p>
+      </div>
+        <div id="watch-description-extras">
+    <h4>
+Category:
+    </h4>
+        <p id="eow-category"><a href="http://www.youtube.com/education">Education</a></p>
+
+
+
+      <h4>
+Tags:
+      </h4>
+        <ul id="eow-tags" class="watch-info-tag-list">
+    <li><a href="http://www.youtube.com/results?search_query=php&amp;search=tag">php</a></li>
+    <li><a href="http://www.youtube.com/results?search_query=mysql&amp;search=tag">mysql</a></li>
+    <li><a href="http://www.youtube.com/results?search_query=search%20box&amp;search=tag">search box</a></li>
+    <li><a href="http://www.youtube.com/results?search_query=jquery&amp;search=tag">jquery</a></li>
+    <li><a href="http://www.youtube.com/results?search_query=ajax&amp;search=tag">ajax</a></li>
+  </ul>
+
+
+      <h4>License:</h4>
+        <p id="eow-reuse">
+Standard YouTube License
+  </p>
+
+
+  </div>
+
+    </div>
+
+      <ul id="watch-description-extra-info">
+    
+
+      <li>
+          <div class="watch-sparkbars">
+    <div class="watch-sparkbar-likes" style="width: 0%"></div>
+    <div class="watch-sparkbar-dislikes" style="width: 0%"></div>
+  </div>
+  <span class="watch-likes-dislikes">
+<span class="likes">0</span> likes, <span class="dislikes">0</span> dislikes
+  </span>
+
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+
+
+          <div class="yt-horizontal-rule ">
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+  </div>
+
+
+  <div id="watch-description-toggle" class="yt-uix-expander-head">
+    <div id="watch-description-expand" class="expand">
+      <button type="button" class="metadata-inline yt-uix-button yt-uix-button-text" onclick=";return false;" role="button"><span class="yt-uix-button-content">Show more <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Show more">
+ </span></button>
+    </div>
+    <div id="watch-description-collapse" class="collapse">
+      <button type="button" class="metadata-inline yt-uix-button yt-uix-button-text" onclick=";return false;" role="button"><span class="yt-uix-button-content">Show less <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Show less">
+ </span></button>
+    </div>
+  </div>
+
+
+
+  </div> 
+
+  </div>
+
+  <div id="watch-discussion">
+      
+
+      
+      <div id="comments-view" data-type="everything" class="">
+        <div id="comment-share-area" class="comment-share-area yt-rounded hid">
+    <div class="comment-share-content">
+      <h4>Link to this comment:</h4>
+      <div>
+        <input class="comment-share-url yt-uix-form-input-text" type="text">
+      </div>
+      <div>
+        <span>Share to:</span>
+          <img alt="" title="Facebook" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon-comment-share icon-comment-share-facebook" action="yt.window.popup('http:\/\/www.facebook.com\/sharer.php?u=http%3A%2F%2Fwww.youtube.com%2Fcomment%3Flc%3D_COMMENT_ID_&amp;t=_COMMENT_TEXT_', {height:440, width:620, scrollbars:true});">
+          <img alt="" title="Twitter" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon-comment-share icon-comment-share-twitter" action="yt.window.popup('http:\/\/twitter.com\/share?url=http%3A%2F%2Fwww.youtube.com%2Fcomment%3Flc%3D_COMMENT_ID_&amp;text=_COMMENT_TEXT_%3A&amp;via=youtube', {height:650, width:1024, scrollbars:true});">
+          <img alt="" title="Google+" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon-comment-share icon-comment-share-googleplus" action="yt.window.popup('https:\/\/plus.google.com\/share?url=http%3A%2F%2Fwww.youtube.com%2Fcomment%3Flc%3D_COMMENT_ID_', {height:650, width:1024, scrollbars:true});">
+      </div>
+    </div>
+    <div class="close comment-action" data-action="close-share">
+      <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="close-button">
+    </div>
+  </div>
+
+
+        
+
+  <div class="comments-section ">
+    <div id="comments-header-container">
+      <div id="comments-header">
+          <a class="comments-section-see-all" href="http://www.youtube.com/all_comments?v=8mnAJ4IMggo">
+see all
+          </a>
+        <h4>
+All Comments
+          <span class="comments-section-stat">(2)</span>
+        </h4>
+      </div>
+    </div>
+
+          <div class="comments-post-container clearfix">
+      <div class="comments-post-alert">
+        <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dwatch_comments%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu&amp;hl=en_US&amp;ltmpl=sso">Sign In</a> or <a href="http://www.youtube.com/signup?feature=watch_comments&amp;next=%2Fwatch%3Fv%3D8mnAJ4IMggo%26feature%3Drelmfu">Sign Up</a><span class="comments-post-form-rollover-text"> now to post a comment!</span>
+
+      </div>
+  </div>
+
+
+
+    <ul class="comment-list">
+          
+
+
+  <li class="comment yt-tile-default " data-author-viewing="" data-id="Zn80McT-9jaba74qlUrh4gEYEI20jEnK0PWj05S3JdY" data-score="0">
+
+    <div class="comment-body">
+        <div class="content-container">
+    <div class="content">
+
+        <div class="comment-text" dir="ltr">
+          <p>The search box works as far as displaying the suggestion 
+list but does not copy the selected item into the input field. How do I 
+go about resolving that? Also﻿ what if I want to save another filed of 
+selected record i.e. user_id while displaying name?</p>
+
+        </div>
+
+        <p class="metadata">
+          <span class="author ">
+                <a href="http://www.youtube.com/user/OmerHawary" class="yt-user-name " dir="ltr">OmerHawary</a>
+
+          </span>
+          <span class="time">
+            8 months ago
+          </span>
+        </p>
+    </div>
+
+
+        <div class="comment-actions">
+<span class="yt-uix-button-group"><button type="button" class="start comment-action-vote-up comment-action yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="Vote Up" data-action="vote-up" data-tooltip-show-delay="300" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-up" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Vote Up"></button><button type="button" class="end comment-action-vote-down comment-action yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="Vote Down" data-action="vote-down" data-tooltip-show-delay="300" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-down" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Vote Down"></button></span><span class="yt-uix-button-group"><button type="button" class="start comment-action yt-uix-button yt-uix-button-default" onclick=";return false;" data-action="reply" role="button"><span class="yt-uix-button-content">Reply </span></button><button type="button" class="end flip yt-uix-button yt-uix-button-default yt-uix-button-empty" onclick=";return false;" data-button-has-sibling-menu="true" role="button" aria-pressed="false" aria-expanded="false" aria-haspopup="true" aria-activedescendant=""><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""><div class="yt-uix-button-menu yt-uix-button-menu-default" style="display: none;"><ul><li class="comment-action" data-action="share"><span class="yt-uix-button-menu-item">Share</span></li><li class="comment-action-remove comment-action" data-action="remove"><span class="yt-uix-button-menu-item">Remove</span></li><li class="comment-action" data-action="flag"><span class="yt-uix-button-menu-item">Flag for spam</span></li><li class="comment-action-block comment-action" data-action="block"><span class="yt-uix-button-menu-item">Block User</span></li><li class="comment-action-unblock comment-action" data-action="unblock"><span class="yt-uix-button-menu-item">Unblock User</span></li></ul></div></button></span>  </div>
+
+  </div>
+
+    </div>
+  </li>
+
+    
+
+
+  <li class="comment yt-tile-default  last" data-author-viewing="" data-id="Zn80McT-9ja7eDt5aLN2J3EMoflv5h03BL4AOt8tQ1I" data-score="0">
+
+    <div class="comment-body">
+        <div class="content-container">
+    <div class="content">
+
+        <div class="comment-text" dir="ltr">
+          <p>i'm having a little problem. whole tut is good, but when i 
+type search word in text box another drop down list﻿ shows up on top of 
+one we created in this tutorial. that drop down list is default for 
+already typed words in text box. how do i fix this?</p>
+<p></p>
+
+        </div>
+
+        <p class="metadata">
+          <span class="author ">
+                <a href="http://www.youtube.com/user/mrkisha210" class="yt-user-name " dir="ltr">mrkisha210</a>
+
+          </span>
+          <span class="time">
+            8 months ago
+          </span>
+        </p>
+    </div>
+
+
+        <div class="comment-actions">
+<span class="yt-uix-button-group"><button type="button" class="start comment-action-vote-up comment-action yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="Vote Up" data-action="vote-up" data-tooltip-show-delay="300" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-up" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Vote Up"></button><button type="button" class="end comment-action-vote-down comment-action yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="Vote Down" data-action="vote-down" data-tooltip-show-delay="300" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-down" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Vote Down"></button></span><span class="yt-uix-button-group"><button type="button" class="start comment-action yt-uix-button yt-uix-button-default" onclick=";return false;" data-action="reply" role="button"><span class="yt-uix-button-content">Reply </span></button><button type="button" class="end flip yt-uix-button yt-uix-button-default yt-uix-button-empty" onclick=";return false;" data-button-has-sibling-menu="true" role="button" aria-pressed="false" aria-expanded="false" aria-haspopup="true" aria-activedescendant=""><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""><div class="yt-uix-button-menu yt-uix-button-menu-default" style="display: none;"><ul><li class="comment-action" data-action="share"><span class="yt-uix-button-menu-item">Share</span></li><li class="comment-action-remove comment-action" data-action="remove"><span class="yt-uix-button-menu-item">Remove</span></li><li class="comment-action" data-action="flag"><span class="yt-uix-button-menu-item">Flag for spam</span></li><li class="comment-action-block comment-action" data-action="block"><span class="yt-uix-button-menu-item">Block User</span></li><li class="comment-action-unblock comment-action" data-action="unblock"><span class="yt-uix-button-menu-item">Unblock User</span></li></ul></div></button></span>  </div>
+
+  </div>
+
+    </div>
+  </li>
+
+
+    </ul>
+  </div>
+
+
+            <div class="comments-section">
+  </div>
+
+
+
+      <ul>
+    <li class="comment hid" id="parent-comment-loading"> Loading comment...</li>
+  </ul>
+
+    <div id="comments-loading" class="hid">Loading...</div>
+  </div>
+
+
+
+  </div>
+
+      </div>
+      <div id="watch-sidebar">
+        
+
+
+
+<div class="watch-sidebar-section "><div id="watch-related-container" class="watch-sidebar-body"><ul id="watch-related" class="video-list"><li class="video-list-item video-list-item-mfu"><a href="http://www.youtube.com/watch?v=SYY6lC9WDaw&amp;feature=relmfu" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_010.jpg" alt="jQuery PHP Search Box Revisited PART 1" data-thumb="//i4.ytimg.com/vi/SYY6lC9WDaw/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">14:22</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="SYY6lC9WDaw" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery PHP Search Box Revisited PART 1">jQuery PHP Search Box Revisited PART 1</span><span class="stat">by <span class="yt-user-name " dir="ltr">MrDualChart</span></span><span class="stat">822 views</span></a></li><li class="video-list-item video-list-item-mfu"><a href="http://www.youtube.com/watch?v=nbrueXmgPZc&amp;feature=relmfu" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_008.jpg" alt="jQuery PHP Search Box Tutorial Part 3" data-thumb="//i3.ytimg.com/vi/nbrueXmgPZc/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">14:57</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="nbrueXmgPZc" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery PHP Search Box Tutorial Part 3">jQuery PHP Search Box Tutorial Part 3</span><span class="stat">by <span class="yt-user-name " dir="ltr">MrDualChart</span></span><span class="stat">2,352 views</span></a></li><li class="video-list-item video-list-item-mfu"><a href="http://www.youtube.com/watch?v=2wqXhHTlcFg&amp;feature=relmfu" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_014.jpg" alt="jQuery PHP Search Box Tutorial Part 2" data-thumb="//i3.ytimg.com/vi/2wqXhHTlcFg/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">9:49</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="2wqXhHTlcFg" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery PHP Search Box Tutorial Part 2">jQuery PHP Search Box Tutorial Part 2</span><span class="stat">by <span class="yt-user-name " dir="ltr">MrDualChart</span></span><span class="stat">1,551 views</span></a></li><li class="video-list-item video-list-item-mfu"><a href="http://www.youtube.com/watch?v=Bd-niZKkOLE&amp;feature=relmfu" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_004.jpg" alt="jQuery PHP Search Box Tutorial Part 1" data-thumb="//i3.ytimg.com/vi/Bd-niZKkOLE/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">14:47</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="Bd-niZKkOLE" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery PHP Search Box Tutorial Part 1">jQuery PHP Search Box Tutorial Part 1</span><span class="stat">by <span class="yt-user-name " dir="ltr">MrDualChart</span></span><span class="stat">4,009 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=IrFxLOffgNg&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_009.jpg" alt="login script with jquery and php" data-thumb="//i2.ytimg.com/vi/IrFxLOffgNg/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">9:56</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="IrFxLOffgNg" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="login script with jquery and php">login script with jquery and php</span><span class="stat">by <span class="yt-user-name " dir="ltr">optikalefxx</span></span><span class="stat">22,174 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=nBz2lG_jm-A&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_011.jpg" alt="PHP MySQL Tutorial: Create a Database and Table in phpMyAdmin -HD-" data-thumb="//i3.ytimg.com/vi/nBz2lG_jm-A/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">11:25</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="nBz2lG_jm-A" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="PHP MySQL Tutorial: Create a Database and Table in phpMyAdmin -HD-">PHP MySQL Tutorial: Create a Database and Table in phpMyAdmin -HD-</span><span class="stat">by <span class="yt-user-name " dir="ltr">RiverCityGraphix</span></span><span class="stat">129,239 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=3FVQRoMZPMs&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_013.jpg" alt="PHP Tutorials: Search Engine (Part 7/8)" data-thumb="//i4.ytimg.com/vi/3FVQRoMZPMs/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">6:52</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="3FVQRoMZPMs" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="PHP Tutorials: Search Engine (Part 7/8)">PHP Tutorials: Search Engine (Part 7/8)</span><span class="stat">by <span class="yt-user-name " dir="ltr">phpacademy</span></span><span class="stat">5,155 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=HoiA5Z69P1M&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_005.jpg" alt="jQuery autosuggest with PHP/MYSQL" data-thumb="//i1.ytimg.com/vi/HoiA5Z69P1M/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">55:49</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="HoiA5Z69P1M" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery autosuggest with PHP/MYSQL">jQuery autosuggest with PHP/MYSQL</span><span class="stat">by <span class="yt-user-name " dir="ltr">kydkobra89</span></span><span class="stat">2,715 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=DqsBZSq-3c0&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default_007.jpg" alt="Conexión a Bases de datos con PHP y MySQL parte 1 (Crear base de datos)" data-thumb="//i1.ytimg.com/vi/DqsBZSq-3c0/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">10:17</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="DqsBZSq-3c0" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="Conexión a Bases de datos con PHP y MySQL parte 1 (Crear base de datos)">Conexión a Bases de datos con PHP y MySQL parte 1 (Crear base de datos)</span><span class="stat">by <span class="yt-user-name " dir="ltr">xymind</span></span><span class="stat">11,423 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=F2Absx2QYYI&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-0" src="AutoCompleteVideo2_files/default.jpg" alt="PHP Tutorials: Multi-Site Search [Part Three (3)]" data-thumb="//i3.ytimg.com/vi/F2Absx2QYYI/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">15:15</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="F2Absx2QYYI" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="PHP Tutorials: Multi-Site Search [Part Three (3)]">PHP Tutorials: Multi-Site Search [Part Three (3)]</span><span class="stat">by <span class="yt-user-name " dir="ltr">SlothScripts</span></span><span class="stat">274 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=Tzuuh6wSijo&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-1" src="AutoCompleteVideo2_files/default_006.jpg" alt="How to create a search engine in PHP with source code" data-thumb="//i1.ytimg.com/vi/Tzuuh6wSijo/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">10:53</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="Tzuuh6wSijo" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="How to create a search engine in PHP with source code">How to create a search engine in PHP with source code</span><span class="stat">by <span class="yt-user-name " dir="ltr">mosleh1130</span></span><span class="stat">10,843 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=9dAEagOyJI0&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-1" src="AutoCompleteVideo2_files/default_012.jpg" alt="jQuery :: Simple AJAX Calls" data-thumb="//i2.ytimg.com/vi/9dAEagOyJI0/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">7:26</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="9dAEagOyJI0" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery :: Simple AJAX Calls">jQuery :: Simple AJAX Calls</span><span class="stat">by <span class="yt-user-name " dir="ltr">theartofcode</span></span><span class="stat">593 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=8wUu7pWBygY&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-1" src="AutoCompleteVideo2_files/default_003.jpg" alt="PHP Tutorials: jQuery: Check if a username is available without refreshing" data-thumb="//i1.ytimg.com/vi/8wUu7pWBygY/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">25:27</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="8wUu7pWBygY" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="PHP Tutorials: jQuery: Check if a username is available without refreshing">PHP Tutorials: jQuery: Check if a username is available without refreshing</span><span class="stat">by <span class="yt-user-name " dir="ltr">phpacademy</span></span><span class="stat">21,662 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=JhWVi-pY43Q&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-1" src="AutoCompleteVideo2_files/default_002.jpg" alt="Tutorial on Storing and Retriving images along with text from mysql database" data-thumb="//i3.ytimg.com/vi/JhWVi-pY43Q/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">41:52</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="JhWVi-pY43Q" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="Tutorial on Storing and Retriving images along with text from mysql database">Tutorial on Storing and Retriving images along with text from mysql database</span><span class="stat">by <span class="yt-user-name " dir="ltr">srajarjun</span></span><span class="stat">4,165 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=VQUV8Fmqwqw&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-1" src="AutoCompleteVideo2_files/default_015.jpg" alt="Ajax+PHP+MySQL | Buscador en tiempo real" data-thumb="//i3.ytimg.com/vi/VQUV8Fmqwqw/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">17:01</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="VQUV8Fmqwqw" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="Ajax+PHP+MySQL | Buscador en tiempo real">Ajax+PHP+MySQL | Buscador en tiempo real</span><span class="stat">by <span class="yt-user-name " dir="ltr">leandrox990</span></span><span class="stat">6,668 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=itdREDdfOus&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-2" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Search, Sort, Paginate with AJAX" data-thumb="//i2.ytimg.com/vi/itdREDdfOus/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">13:44</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="itdREDdfOus" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="Search, Sort, Paginate with AJAX">Search, Sort, Paginate with AJAX</span><span class="stat">by <span class="yt-user-name " dir="ltr">sunfjun</span></span><span class="stat">569 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=_GYeZy_RDxA&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-2" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="AJAX, PHP, MYSQL - Buscar, Editar y Eliminar Registros" data-thumb="//i4.ytimg.com/vi/_GYeZy_RDxA/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">46:44</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="_GYeZy_RDxA" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="AJAX, PHP, MYSQL - Buscar, Editar y Eliminar Registros">AJAX, PHP, MYSQL - Buscar, Editar y Eliminar Registros</span><span class="stat">by <span class="yt-user-name " dir="ltr">leandrox990</span></span><span class="stat">10,127 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=FyXeOX-uYMc&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-2" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="JQuery + PHP + MySQL- AJAX Chat Box" data-thumb="//i3.ytimg.com/vi/FyXeOX-uYMc/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">28:12</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="FyXeOX-uYMc" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="JQuery + PHP + MySQL- AJAX Chat Box">JQuery + PHP + MySQL- AJAX Chat Box</span><span class="stat">by <span class="yt-user-name " dir="ltr">JREAMdesign</span></span><span class="stat">27,446 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=e60Of9YTv60&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-2" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Motor de Busqueda con PHP+MySQL Parte 1" data-thumb="//i2.ytimg.com/vi/e60Of9YTv60/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">9:36</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="e60Of9YTv60" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="Motor de Busqueda con PHP+MySQL Parte 1">Motor de Busqueda con PHP+MySQL Parte 1</span><span class="stat">by <span class="yt-user-name " dir="ltr">leandrox990</span></span><span class="stat">5,952 views</span></a></li><li class="video-list-item video-list-item-related"><a href="http://www.youtube.com/watch?v=Wy4y8DBZ7Uo&amp;feature=related" class="related-video"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img data-group-key="thumb-group-2" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="jQuery hide and show" data-thumb="//i4.ytimg.com/vi/Wy4y8DBZ7Uo/default.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">6:03</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="Wy4y8DBZ7Uo" role="button"><span class="yt-uix-button-content">  <span class="addto-label">
+Watch Later
+  </span>
+  <span class="addto-label-error">
+Error
+  </span>
+  <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</span><span dir="ltr" class="title" title="jQuery hide and show">jQuery hide and show</span><span class="stat">by <span class="yt-user-name " dir="ltr">tnylea</span></span><span class="stat">580 views</span></a></li></ul><ul id="watch-more-related" class="video-list hid"><li id="watch-more-related-loading">Loading more suggestions...</li></ul><p class="content"></p></div>     <div class="watch-sidebar-foot"><p class="content"><button type="button" id="watch-more-related-button" onclick=";return false;" class=" yt-uix-button yt-uix-button-default" data-button-action="yt.www.watch.watch5.handleLoadMoreRelated" role="button"><span class="yt-uix-button-content">Load more suggestions </span></button></p></div></div> 
+          <span class="yt-vertical-rule-main"></span>
+  <span class="yt-vertical-rule-corner-top"></span>
+  <span class="yt-vertical-rule-corner-bottom"></span>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="visibility: hidden; height: 0px; padding: 0px; overflow: hidden;">
+      
+
+
+  <div id="baseDiv"></div>
+
+    </div>
+  </div>
+  <!-- end watch-main-container -->
+</div>
+
+    </div>
+    <!-- end content -->
+  </div>
+  <div id="footer-container">
+    <!-- begin footer -->
+        <script>
+      if (window.yt.timing) {
+        yt.timing.tick("foot_begin");
+      }
+    </script>
+
+      <div id="footer">
+        <div class="yt-horizontal-rule ">
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+  </div>
+
+
+    <div id="footer-logo">
+      <a href="http://www.youtube.com/" title="YouTube home">
+        <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="YouTube home">
+      </a>
+      
+      <span id="footer-divider"></span>
+    </div>
+    <div id="footer-main">
+        
+  <div id="in-product-help" class="yt-uix-clickcard">
+    <button type="button" id="help-button" onclick=";return false;" class="yt-uix-clickcard-target yt-uix-button-reverse yt-uix-button yt-uix-button-default" data-orientation="vertical" data-locale="en_US" data-iph-anchor-text="More Help" data-iph-search-button-text="Search" data-iph-tracking="iph-questionmark" data-iph-js-url="//s.ytimg.com/yt/jsbin/www-help-vfloWGYQ0.js" data-iph-search-input-text="Search YouTube's Help Center" data-iph-title-text="Need Help on this page?" data-iph-topic-id="1699712" data-iph-css-url="//s.ytimg.com/yt/cssbin/www-helpie-vflZ9i4gS.css" data-help-center-host="//support.google.com/youtube" role="button"><span class="yt-uix-button-content">  <img class="questionmark" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+  <span>Help</span>
+  <img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+ </span></button>
+    <div class="yt-uix-clickcard-content" id="help-target">  <p class="loading-spinner">
+    <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="">
+Loading...
+  </p>
+</div>
+  </div>
+
+      <ul id="footer-links-primary">
+        <li><a href="http://www.youtube.com/t/about_youtube">About</a></li>
+        <li><a href="http://www.youtube.com/t/press">Press &amp; Blogs</a></li>
+        <li><a href="http://www.youtube.com/t/copyright_center">Copyright</a></li>
+        <li><a href="http://www.youtube.com/creators">Creators &amp; Partners</a></li>
+        <li><a href="http://www.youtube.com/t/advertising_overview">Advertising</a></li>
+        <li><a href="http://www.youtube.com/dev">Developers</a></li>
+      </ul>
+
+
+      <ul id="footer-links-secondary">
+        <li><a href="http://www.youtube.com/t/terms">Terms</a></li>
+        <li><a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a></li>
+        <li><a href="http://support.google.com/youtube/bin/request.py?contact_type=abuse&amp;hl=en-US">Safety</a></li>
+        <li><a href="http://www.google.com/tools/feedback/intl/en/error.html" onclick="return yt.www.feedback.start(yt.getConfig('FEEDBACK_LOCALE_LANGUAGE'), yt.getConfig('FEEDBACK_LOCALE_EXTRAS'));" id="reportbug">Report a bug</a></li>
+        <li><a href="http://www.youtube.com/testtube">Try something new!</a></li>
+      </ul>
+        <ul class="pickers yt-uix-button-group" data-button-toggle-group="required">
+      <li>  <button type="button" class=" yt-uix-button yt-uix-button-text" onclick="yt.www.masthead.loadPicker('language-picker', &quot;&quot;); return false;;return false;" data-button-toggle="true" data-button-menu-id="arrow" role="button"><span class="yt-uix-button-content">Language: English
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</li>
+      <li>  <button type="button" class=" yt-uix-button yt-uix-button-text" onclick="yt.www.masthead.loadPicker('region-picker', &quot;&quot;); return false;;return false;" data-button-toggle="true" data-button-menu-id="arrow" role="button"><span class="yt-uix-button-content">Location: Worldwide
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</li>
+      <li>  <button type="button" class=" yt-uix-button yt-uix-button-text" onclick="yt.www.masthead.loadPicker('safetymode-picker', &quot;&quot;);return false;" data-button-toggle="true" data-button-menu-id="arrow" role="button"><span class="yt-uix-button-content">Safety:
+  <span class="yt-footer-safety-value">
+Off
+  </span>
+ </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button>
+</li>
+  </ul>
+    <div id="picker-container"></div>
+  <div id="picker-loading" style="display: none">Loading...</div>
+
+
+    </div>
+  </div>
+
+        <script>
+      if (window.yt.timing) {
+        yt.timing.tick("foot_end");
+      }
+    </script>
+
+    <!-- end footer -->
+  </div>
+    
+
+
+
+  <div id="playlist-bar" class="hid passive editable empty" data-video-url="/watch?v=&amp;feature=BFql&amp;playnext=1&amp;list=QL" data-list-id="" data-list-type="QL"><iframe src='javascript:""' id="playlist-bar-mask" frameborder="0"></iframe>
+    <div id="playlist-bar-bar-container">
+      <div id="playlist-bar-bar">
+        <div class="yt-alert yt-alert-naked yt-alert-success hid " id="playlist-bar-notifications"><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-content"></div></div>
+<span id="playlist-bar-info"><span class="playlist-bar-active playlist-bar-group"><button onclick=";return false;" title="Previous video" type="button" id="playlist-bar-prev-button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-prev" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Previous video"></button><span class="playlist-bar-count"><span class="playing-index">0</span> / <span class="item-count">0</span></span><button data-tooltip-text="Next video" type="button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-default yt-uix-button-empty" onclick=";return false;" id="playlist-bar-next-button" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-next" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button></span><span class="playlist-bar-active playlist-bar-group"><button data-tooltip-text="Turn autoplay on" type="button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-default yt-uix-button-empty" onclick=";return false;" id="playlist-bar-autoplay-button" data-button-toggle="true" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-autoplay" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button><button data-tooltip-text="Turn shuffle on" type="button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-default yt-uix-button-empty" onclick=";return false;" id="playlist-bar-shuffle-button" data-button-toggle="true" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-shuffle" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button></span><span class="playlist-bar-passive playlist-bar-group"><button onclick=";return false;" title="Play videos" type="button" id="playlist-bar-play-button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-default yt-uix-tooltip yt-uix-button-empty" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-play" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Play videos"></button><span class="playlist-bar-count"><span class="item-count">0</span></span></span><span id="playlist-bar-title" class="yt-uix-button-group"><span class="playlist-title">Unsaved Playlist</span></span></span>
+        <a id="playlist-bar-lists-back" href="#">
+Return to active list
+        </a>
+
+<span id="playlist-bar-controls"><span class="playlist-bar-group"><button data-tooltip-text="Hide playlist" type="button" class="yt-uix-tooltip yt-uix-tooltip-masked  yt-uix-button yt-uix-button-text yt-uix-button-empty" onclick=";return false;" id="playlist-bar-toggle-button" role="button"><img class="yt-uix-button-icon yt-uix-button-icon-playlist-bar-toggle" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button></span><span class="playlist-bar-group"><button type="button" class="yt-uix-tooltip yt-uix-tooltip-masked yt-uix-button-reverse flip yt-uix-button yt-uix-button-text" onclick=";return false;" data-button-menu-id="playlist-bar-options-menu" data-button-has-sibling-menu="true" role="button"><span class="yt-uix-button-content">Options </span><img class="yt-uix-button-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt=""></button></span></span>      </div>
+    </div>
+
+<div id="playlist-bar-tray-container"><div id="playlist-bar-tray" class="yt-uix-slider yt-uix-slider-fluid"><button class="yt-uix-button playlist-bar-tray-button yt-uix-button-default yt-uix-slider-prev" onclick="return false;"><img class="yt-uix-slider-prev-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Previous video"></button><button class="yt-uix-button playlist-bar-tray-button yt-uix-button-default yt-uix-slider-next" onclick="return false;"><img class="yt-uix-slider-next-arrow" src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Next video"></button><div class="yt-uix-slider-body"><div id="playlist-bar-tray-content" class="yt-uix-slider-slide"><ol class="video-list"></ol><ol id="playlist-bar-help"><li class="empty playlist-bar-help-message">Your queue is empty. Add videos to your queue using this button: <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="addto-button-help"><br> or <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu&amp;hl=en_US&amp;ltmpl=sso">sign in</a> to load a different list.</li></ol></div><div class="yt-uix-slider-shade-left"></div><div class="yt-uix-slider-shade-right"></div></div></div><div id="playlist-bar-save"></div><div id="playlist-bar-lists" class="dark-lolz"></div><div id="playlist-bar-loading"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" alt="Loading..."><span id="playlist-bar-loading-message">Loading...</span><span id="playlist-bar-saving-message" class="hid">Saving...</span></div><div id="playlist-bar-template" style="display: none;" data-video-thumb-url="//i4.ytimg.com/vi/__video_encrypted_id__/default.jpg"><!--<li class="playlist-bar-item yt-uix-slider-slide-unit __classes__" data-video-id="__video_encrypted_id__"><a href="__video_url__" title="__video_title__"><span class="video-thumb ux-thumb yt-thumb-default-106 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="//s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="__video_title__" data-thumb-manual="true" data-thumb="__video_thumb_url__" width="106" ><span class="vertical-align"></span></span></span></span><span class="screen"></span><span class="count"><strong>__list_position__</strong></span><span class="play"><img src="//s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif"></span><span class="yt-uix-button yt-uix-button-default delete"><img class="yt-uix-button-icon-playlist-bar-delete" src="//s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="Delete"></span><span class="now-playing">Now playing</span><span dir="ltr" class="title"><span>__video_title__  <span class="uploader">by __video_display_name__</span>
+</span></span><span class="dragger"></span></a></li>--></div><div id="playlist-bar-next-up-template" style="display: none;"><!--<div class="playlist-bar-next-thumb"><span class="video-thumb ux-thumb yt-thumb-default-74 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="//i4.ytimg.com/vi/__video_encrypted_id__/default.jpg" alt="Thumbnail
+" width="74" ><span class="vertical-align"></span></span></span></span></div>--></div></div>      <div id="playlist-bar-options-menu" class="hid passive">
+
+    <div id="playlist-bar-extras-menu">
+        <ul>
+      <li><span class="yt-uix-button-menu-item" data-action="clear">
+Clear all videos from this list
+      </span></li>
+  </ul>
+
+    </div>
+
+    <ul>
+      <li><span class="yt-uix-button-menu-item" onclick="window.location.href='//support.google.com/youtube/bin/answer.py?answer=146749&amp;hl=en-US'">Learn more</span></li>
+    </ul>
+  </div>
+
+  </div>
+
+
+  
+  <div id="shared-addto-watch-later-login" class="hid">
+    <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252F&amp;hl=en_US&amp;ltmpl=sso" class="sign-in-link">Sign in</a> to add this to a playlist
+
+  </div>
+
+  <div id="shared-addto-menu" style="display: none;" class="hid sign-in">
+      <div class="addto-menu">
+        <div id="addto-list-panel" class="menu-panel active-panel">
+        <span class="yt-uix-button-menu-item yt-uix-tooltip sign-in" data-possible-tooltip="" data-tooltip-show-delay="750"><a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252F&amp;hl=en_US&amp;ltmpl=sso" class="sign-in-link">Sign in</a> to add this to a playlist
+</span>
+
+  </div>
+  <div id="addto-list-saved-panel" class="menu-panel">
+    <div class="panel-content">
+      <div class="yt-alert yt-alert-naked yt-alert-success  "><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-content">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+          
+  <span class="message">Added to <span class="addto-title yt-uix-tooltip yt-uix-tooltip-reverse" title="More information about this playlist" data-tooltip-show-delay="750"></span></span>
+
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div id="addto-list-error-panel" class="menu-panel">
+    <div class="panel-content">
+      <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+      <span class="error-details"></span>
+      <a class="show-menu-link">Back to list</a>
+    </div>
+  </div>
+
+        <div id="addto-note-input-panel" class="menu-panel">
+    <div class="panel-content">
+      <div class="yt-alert yt-alert-naked yt-alert-success  "><div class="yt-alert-icon"><img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon"></div><div class="yt-alert-content">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+            <span class="message">Added to playlist:</span>
+  <span class="addto-title yt-uix-tooltip" title="More information about this playlist" data-tooltip-show-delay="750"></span>
+
+    </div>
+</div></div>
+    </div>
+<div class="yt-uix-char-counter" data-char-limit="150"><div class="addto-note-box addto-text-box"><textarea id="addto-note" class="addto-note yt-uix-char-counter-input" maxlength="150"></textarea><label for="addto-note" class="addto-note-label">Add an optional note</label></div><span class="yt-uix-char-counter-remaining">150</span></div>    <button disabled="disabled" type="button" class="playlist-save-note yt-uix-button yt-uix-button-default" onclick=";return false;" role="button"><span class="yt-uix-button-content">Add note </span></button>
+  </div>
+  <div id="addto-note-saving-panel" class="menu-panel">
+    <div class="panel-content loading-content">
+      <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+      <span>Saving note...</span>
+    </div>
+  </div>
+  <div id="addto-note-saved-panel" class="menu-panel">
+    <div class="panel-content">
+      <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+      <span class="message">Note added to:</span>
+    </div>
+  </div>
+  <div id="addto-note-error-panel" class="menu-panel">
+    <div class="panel-content">
+      <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif">
+      <span class="message">Error adding note:</span>
+      <ul class="error-details"></ul>
+      <a class="add-note-link">Click to add a new note</a>
+    </div>
+  </div>
+  <div class="close-note hid">
+    <img src="AutoCompleteVideo2_files/pixel-vfl3z5WfW.gif" class="close-button">
+  </div>
+
+  </div>
+
+  </div>
+
+
+  
+
+  </div>
+  <!-- end page -->
+    
+    
+    <script id="www-core-js" src="AutoCompleteVideo2_files/www-core-vfl2dz97Y.js"></script>
+
+
+  <script>
+        yt.setConfig({
+      'XSRF_TOKEN': 'NGyOJrTUaEJ_HxKbRW8eBPg5e0t8MTMzNTYzMzQ1M0AxMzM1NTQ3MDUz',
+      'XSRF_FIELD_NAME': 'session_token'
+    });
+    yt.pubsub.subscribe('init', yt.www.xsrf.populateSessionToken);
+
+    yt.setConfig('XSRF_REDIRECT_TOKEN', 'nM3gcCAkkx8Pl0nLLwJ8P6Y9KSJ8MTMzNTYzMzQ1M0AxMzM1NTQ3MDUz');
+
+    yt.setConfig('LOGGED_IN', false);
+    yt.setConfig('SESSION_INDEX', null);
+
+    yt.setConfig('FEEDBACK_LOCALE_LANGUAGE', "en");
+    yt.setConfig('FEEDBACK_LOCALE_EXTRAS', {"experiments": "", "accept_language": "en-us,en;q=0.5"});
+  </script>
+
+      <script>
+      if (window.yt.timing) {
+        yt.timing.tick("js_head");
+      }
+    </script>
+
+      <script>
+    yt.net.ajax.setToken('subscription_ajax', "");
+    yt.pubsub.subscribe('init', yt.www.subscriptions.SubscriptionButton.init);
+  </script>
+
+
+  <script>
+    yt.setConfig({
+      'VIDEO_ID': "8mnAJ4IMggo"    });
+    yt.net.ajax.setToken('watch_actions_ajax', "");
+
+    if (window['gYouTubePlayerReady']) {
+      yt.registerGlobal('gYouTubePlayerReady');
+    }
+  </script>
+
+  <script>
+    yt = yt || {};
+    yt.playerConfig = {"assets": {"html": "\/html5_player_template", "css": "http:\/\/s.ytimg.com\/yt\/cssbin\/www-player-vflbYiXiO.css", "js": "http:\/\/s.ytimg.com\/yt\/jsbin\/html5player-vflFQf0-f.js"}, "url": "http:\/\/s.ytimg.com\/yt\/swfbin\/watch_as3-vflCBBX6J.swf", "min_version": "8.0.0", "args": {"ttsurl": "http:\/\/www.youtube.com\/api\/timedtext?sparams=asr_langs%2Ccaps%2Cv%2Cexpire\u0026asr_langs=en%2Cko%2Cja\u0026v=8mnAJ4IMggo\u0026caps=asr\u0026expire=1335572253\u0026key=yttt1\u0026signature=3DAFAD25117E4558F9A71BC837906BC2598D42F7.C74E3C95652F5BB16A76373DCFE04C359E71777D\u0026hl=en_US", "fexp": "", "enablecsi": "1", "allow_embed": 1, "rvs": "view_count=822\u0026author=MrDualChart\u0026length_seconds=862\u0026id=SYY6lC9WDaw\u0026title=jQuery+PHP+Search+Box+Revisited+PART+1,view_count=2%2C352\u0026author=MrDualChart\u0026length_seconds=897\u0026id=nbrueXmgPZc\u0026title=jQuery+PHP+Search+Box+Tutorial+Part+3,view_count=1%2C551\u0026author=MrDualChart\u0026length_seconds=589\u0026id=2wqXhHTlcFg\u0026title=jQuery+PHP+Search+Box+Tutorial+Part+2,view_count=4%2C009\u0026author=MrDualChart\u0026length_seconds=887\u0026id=Bd-niZKkOLE\u0026title=jQuery+PHP+Search+Box+Tutorial+Part+1,view_count=22%2C174\u0026author=optikalefxx\u0026length_seconds=596\u0026id=IrFxLOffgNg\u0026title=login+script+with+jquery+and+php,view_count=129%2C239\u0026author=RiverCityGraphix\u0026length_seconds=685\u0026id=nBz2lG_jm-A\u0026title=PHP+MySQL+Tutorial%3A+Create+a+Database+and+Table+in+phpMyAdmin+-HD-,view_count=5%2C155\u0026author=phpacademy\u0026length_seconds=412\u0026id=3FVQRoMZPMs\u0026title=PHP+Tutorials%3A+Search+Engine+%28Part+7%2F8%29,view_count=2%2C715\u0026author=kydkobra89\u0026length_seconds=3349\u0026id=HoiA5Z69P1M\u0026title=jQuery+autosuggest+with+PHP%2FMYSQL,view_count=11%2C423\u0026author=xymind\u0026length_seconds=617\u0026id=DqsBZSq-3c0\u0026title=Conexi%C3%B3n+a+Bases+de+datos+con+PHP+y+MySQL+parte+1+%28Crear+base+de+datos%29,view_count=274\u0026author=SlothScripts\u0026length_seconds=915\u0026id=F2Absx2QYYI\u0026title=PHP+Tutorials%3A+Multi-Site+Search+%5BPart+Three+%283%29%5D,view_count=10%2C843\u0026author=mosleh1130\u0026length_seconds=653\u0026id=Tzuuh6wSijo\u0026title=How+to+create+a+search+engine+in+PHP+with+source+code,view_count=593\u0026author=theartofcode\u0026length_seconds=446\u0026id=9dAEagOyJI0\u0026title=jQuery+%3A%3A+Simple+AJAX+Calls", "vq": "auto", "account_playback_token": "", "autohide": "2", "csi_page_type": "watch5", "keywords": "php,mysql,search box,jquery,ajax", "cr": "US", "cc3_module": "http:\/\/s.ytimg.com\/yt\/swfbin\/subtitles3_module-vflavP5U6.swf", "fmt_list": "45\/1280x720\/99\/0\/0,22\/1280x720\/9\/0\/115,35\/854x480\/9\/0\/115,43\/640x360\/99\/0\/0,34\/640x360\/9\/0\/115,18\/640x360\/9\/0\/115,5\/320x240\/7\/0\/0", "length_seconds": 411, "feature": "relmfu", "enablejsapi": 1, "plid": "AAS-rEeu2jrzYXjA", "cc_font": "Arial Unicode MS, arial, verdana, _sans", "sdetail": "f:relmfu,rv:SYY6lC9WDaw", "tabsb": "1", "url_encoded_fmt_stream_map": "url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v18.lscache3.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dcp%252Cid%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26itag%3D45%26ip%3D138.0.0.0%26signature%3D6E3889489F5E8955EFB0A950530CC44BF3AE6302.9E7851B5BA3BFFAE62D8CC9D80140E202CC13EA8%26sver%3D3%26ratebypass%3Dyes%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=hd720\u0026fallback_host=tc.v18.cache3.c.youtube.com\u0026type=video%2Fwebm%3B+codecs%3D%22vp8.0%2C+vorbis%22\u0026itag=45,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v1.lscache5.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dcp%252Cid%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26itag%3D22%26ip%3D138.0.0.0%26signature%3D4464E0F25D5D1C29DB5A2F75333EC9EFE078E92A.1CD87860916F7460376D90305379123E67C4B176%26sver%3D3%26ratebypass%3Dyes%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=hd720\u0026fallback_host=tc.v1.cache5.c.youtube.com\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.64001F%2C+mp4a.40.2%22\u0026itag=22,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v14.lscache1.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dalgorithm%252Cburst%252Ccp%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26algorithm%3Dthrottle-factor%26itag%3D35%26ip%3D138.0.0.0%26burst%3D40%26sver%3D3%26signature%3D1247C29D599F1CB91F57A9104A5E595C2DF993E8.9D20CDF85B74745657C0DD12162F87AA52D6E41C%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26factor%3D1.25%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=large\u0026fallback_host=tc.v14.cache1.c.youtube.com\u0026type=video%2Fx-flv\u0026itag=35,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v20.lscache6.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dcp%252Cid%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26itag%3D43%26ip%3D138.0.0.0%26signature%3D1E01891C83340DE6256C9DA53B158DB2DBE07076.498756F1F167FFD8BB68BAF5868F4A00FD7E0152%26sver%3D3%26ratebypass%3Dyes%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=medium\u0026fallback_host=tc.v20.cache6.c.youtube.com\u0026type=video%2Fwebm%3B+codecs%3D%22vp8.0%2C+vorbis%22\u0026itag=43,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v9.lscache5.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dalgorithm%252Cburst%252Ccp%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26algorithm%3Dthrottle-factor%26itag%3D34%26ip%3D138.0.0.0%26burst%3D40%26sver%3D3%26signature%3D870053F1623B51037E82A72599E411B9A6E5D631.0331ECDB5C0DED591D9EC9451320CEF4B5C63CF8%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26factor%3D1.25%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=medium\u0026fallback_host=tc.v9.cache5.c.youtube.com\u0026type=video%2Fx-flv\u0026itag=34,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v20.lscache4.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dcp%252Cid%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26itag%3D18%26ip%3D138.0.0.0%26signature%3DC402F6C9D9E1009227BC43A2891FAE21AB601074.2C97F8BCE8173079C3ABD7A1E3FAB754B1E94084%26sver%3D3%26ratebypass%3Dyes%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=medium\u0026fallback_host=tc.v20.cache4.c.youtube.com\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.42001E%2C+mp4a.40.2%22\u0026itag=18,url=http%3A%2F%2Fo-o.preferred.embarq-mco1.v13.lscache4.c.youtube.com%2Fvideoplayback%3Fupn%3DvlxEkVsNJT8%26sparams%3Dalgorithm%252Cburst%252Ccp%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26algorithm%3Dthrottle-factor%26itag%3D5%26ip%3D138.0.0.0%26burst%3D40%26sver%3D3%26signature%3D85D816FC7A819864B129C5826A69535DDEF78DBE.A993EF6760067B5E94619C12C9DA8B0EE2019F3F%26source%3Dyoutube%26expire%3D1335572782%26key%3Dyt1%26ipbits%3D8%26factor%3D1.25%26cp%3DU0hSSlVSUF9NTENOMl9NTFRIOlRvUE9Dc0xxRVpL%26id%3Df269c027820c820a\u0026quality=small\u0026fallback_host=tc.v13.cache4.c.youtube.com\u0026type=video%2Fx-flv\u0026itag=5", "watermark": ",http:\/\/s.ytimg.com\/yt\/img\/watermark\/youtube_watermark-vflHX6b6E.png,http:\/\/s.ytimg.com\/yt\/img\/watermark\/youtube_hd_watermark-vflAzLcD6.png", "sourceid": "yw", "timestamp": 1335547053, "storyboard_spec": "http:\/\/i1.ytimg.com\/sb\/8mnAJ4IMggo\/storyboard3_L$L\/$N.jpg|48#27#100#10#10#0#default#_Mqn9feg-_unUcWS9uAfsOIhCeA|80#45#84#10#10#5000#M$M#BONAYyQX3q55j3m_x1XyMB5_qdY|160#90#84#5#5#5000#M$M#1iLWCS3YrTRoHeurXx7KVoUApVA|320#180#84#3#3#5000#M$M#BCwfWB4kHujpbYDRXscGP0w-tlg", "cc_asr": 1, "showpopout": 1, "hl": "en_US", "tmi": "1", "no_get_video_log": "1", "cc_module": "http:\/\/s.ytimg.com\/yt\/swfbin\/subtitle_module-vflM6Xy-l.swf", "endscreen_module": "http:\/\/s.ytimg.com\/yt\/swfbin\/endscreen-vfl7fuYJn.swf", "supersizefeatured": "1", "is_doubleclick_tracked": "1", "referrer": "http:\/\/www.youtube.com\/watch?v=SYY6lC9WDaw\u0026feature=relmfu", "video_id": "8mnAJ4IMggo", "sendtmp": "1", "sk": "q9iOqn0y66S6d4CNCZCxGckUNGlAnnATC", "t": "vjVQa1PpcFOmSKKZfyJe-VUfts57lRTdXNyKLRzBin8="}, "url_v9as2": "http:\/\/s.ytimg.com\/yt\/swfbin\/cps-vfl_gIfdw.swf", "params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "attrs": {"width": "640", "id": "movie_player", "height": "390"}, "url_v8": "http:\/\/s.ytimg.com\/yt\/swfbin\/cps-vfl_gIfdw.swf", "html5": false};
+      yt.setConfig({
+    'EMBED_HTML_TEMPLATE': "\u003ciframe width=\"__width__\" height=\"__height__\" src=\"__url__\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e",
+    'EMBED_HTML_URL': "http:\/\/www.youtube.com\/embed\/__videoid__"
+  });
+    yt.setMsg('HTML5_DEFAULT_FALLBACK', "This video is currently unavailable.");
+  yt.setMsg('FLASH_UPGRADE', "\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e\u003cdiv class=\"yt-alert-icon\"\u003e\u003cimg s\u0072c=\"\/\/s.ytimg.com\/yt\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n          You need to upgrade your Adobe Flash Player to watch this video. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eDownload it from Adobe.\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e");
+  yt.setMsg('HTML5_NO_AVAILABLE_FORMATS_FALLBACK', "Your browser does not currently recognize any of the video formats available.\u003cbr\u003e\u003ca href=\"\/html5\"\u003eClick here to visit our frequently asked questions about HTML5 video.\u003c\/a\u003e");
+  yt.setMsg('PLAYER_FALLBACK', "\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e\u003cdiv class=\"yt-alert-icon\"\u003e\u003cimg s\u0072c=\"\/\/s.ytimg.com\/yt\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n          The Adobe Flash Player or an HTML5 supported browser is required for video playback. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eGet the latest Flash Player\u003c\/a\u003e \u003cbr\u003e \u003ca href=\"\/html5\"\u003eLearn more about upgrading to an HTML5 browser\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e");
+  yt.setMsg('QUICKTIME_FALLBACK', "\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e\u003cdiv class=\"yt-alert-icon\"\u003e\u003cimg s\u0072c=\"\/\/s.ytimg.com\/yt\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n          The Adobe Flash Player or QuickTime is required for video playback. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eGet the latest Flash Player\u003c\/a\u003e \u003cbr\u003e \u003ca href=\"http:\/\/www.apple.com\/quicktime\/download\/\"\u003eGet the latest version of QuickTime\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e");
+
+  yt.setMsg('HTML5_SPEED_NORMAL', "Normal");
+  yt.setMsg('HTML5_QUALITY_SETTING', "quality");
+  yt.setMsg('HTML5_SPEED_SETTING', "speed");
+  yt.setMsg('HTML5_VOLUME_SETTING', "volume");
+  yt.setMsg('HTML5_VOLUME_MUTED', "muted");
+  yt.setMsg('HTML5_VOLUME_MUTE', "mute");
+  yt.setMsg('HTML5_VOLUME_UNMUTE', "unmute");
+  yt.setMsg('HTML5_CONTROL_TOGGLE', "toggle");
+
+  yt.setMsg('HTML5_SUBS_TRANSCRIBED', "transcribed");
+  yt.setMsg('VISIT_ADVERTISERS_SITE', "Visit advertiser's site");
+  yt.setMsg('FRESCA_COMPLETE_MESSAGE', "Thanks for watching!");
+  yt.setMsg('FRESCA_STAND_BY_MESSAGE', "Please stand by.");
+
+
+    (function() {
+        var forceUpdate = yt.www.watch.player.updateConfig(yt.playerConfig);
+        var youTubePlayer = yt.player.update('watch-player', yt.playerConfig,
+            forceUpdate, gYouTubePlayerReady);
+      yt.setConfig({'PLAYER_REFERENCE': youTubePlayer});
+    })();
+  </script>
+
+
+
+
+
+
+  <script>
+    yt.setConfig({
+      'SUBSCRIBE_AXC': "",
+
+      'IS_OWNER_VIEWING': null,
+      'IS_WIDESCREEN': true,
+      'PREFER_LOW_QUALITY': false,
+      'WIDE_PLAYER_STYLES': ["watch-wide-mode"],
+      'COMMENT_SHARE_URL': "http:\/\/www.youtube.com\/comment?lc=_COMMENT_ID_",
+      'ALLOW_EMBED': true,
+      'ALLOW_RATINGS': true,
+
+      'LIST_AUTO_PLAY_ON': false,
+      'LIST_AUTO_PLAY_VALUE': 1,
+      'SHUFFLE_VALUE': 0,
+      'SHUFFLE_ENABLED': false,
+      'YPC_CAN_RATE_VIDEO': true,
+      'YPC_SHOW_VPPA_CONFIRM_RATING': false,
+
+        'TTS_URL': "http:\/\/www.youtube.com\/api\/timedtext?sparams=asr_langs%2Ccaps%2Cv%2Cexpire\u0026asr_langs=en%2Cko%2Cja\u0026v=8mnAJ4IMggo\u0026caps=asr\u0026expire=1335572253\u0026key=yttt1\u0026signature=3DAFAD25117E4558F9A71BC837906BC2598D42F7.C74E3C95652F5BB16A76373DCFE04C359E71777D\u0026hl=en_US",
+
+
+
+
+
+
+
+      'CONVERSION_CONFIG_DICT': {},
+      'PLAYBACK_ID': "AAS-rEeu2jrzYXjA",
+      'PLAY_ALL_MAX': 480,
+      'IN_SIGNED_OUT_ACTION_PROMO_1': false,
+      'IN_SIGNED_OUT_ACTION_PROMO_2': false    });
+
+    yt.setMsg({
+      'LOADING': "Loading...",
+      'WATCH_ERROR_MESSAGE': "This feature is not available right now. Please try again later."    });
+
+
+
+      yt.setMsg({
+    'UNBLOCK_USER': "Are you sure you want to unblock this user?",
+    'BLOCK_USER': "Are you sure you want to block this user?"
+  });
+  yt.setConfig('BLOCK_USER_AJAX_XSRF', '');
+
+
+      yt.setConfig({
+    'COMMENT_SHARE_URL': "http:\/\/www.youtube.com\/comment?lc=_COMMENT_ID_",
+    'COMMENTS_SIGNIN_URL': "https:\/\/accounts.google.com\/ServiceLogin?uilel=3\u0026service=youtube\u0026passive=true\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dwatch_comments%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253D8mnAJ4IMggo%2526feature%253Drelmfu\u0026hl=en_US\u0026ltmpl=sso",
+    'COMMENTS_THRESHHOLD': -5,
+    'COMMENTS_PAGE_SIZE': 10,
+    'COMMENTS_COUNT': 2,
+    'COMMENTS_YPC_CAN_POST_OR_REACT_TO_COMMENT': true,
+    'COMMENT_VOTE_XSRF' : '',
+    'COMMENT_ACTIONS_XSRF' : '',
+    'COMMENT_SOURCE': "w",
+    'ENABLE_LIVE_COMMENTS': false  });
+
+  yt.net.ajax.setToken('link_ajax', "");
+  yt.net.ajax.setToken('comment_servlet', "");
+  yt.net.ajax.setToken('comment_voting', "");
+
+  yt.setMsg({
+    'COMMENT_OK': "OK",
+    'COMMENT_BLOCKED': "You have been blocked by the owner of this video.",
+    'COMMENT_CAPTCHAFAIL': "The response to the letters on the image was not correct, please try again.",
+    'COMMENT_PENDING': "Comment Pending Approval!",
+    'COMMENT_ERROR_EMAIL': "Error, account unverified (see email)",
+    'COMMENT_ERROR': "Error, try again",
+    'COMMENT_OWNER_LINKING': "Comments can't contain links, please put the link in your video description and refer to it in the comment."
+  });
+
+  yt.pubsub.subscribe('init', yt.www.comments.init);
+
+
+
+      yt.setConfig('ENABLE_AUTO_LARGE', true);
+      yt.www.watch.watch5.updatePlayerSize();
+      yt.pubsub.subscribe('init', function() {
+        yt.events.listen(window, 'resize',
+            yt.www.watch.watch5.handleResize);
+      });
+
+    yt.pubsub.subscribe('init', yt.www.watch.activity.init);
+    yt.pubsub.subscribe('init', yt.www.watch.player.init);
+    yt.pubsub.subscribe('init', yt.www.watch.actions.init);
+    yt.pubsub.subscribe('init', yt.www.watch.shortcuts.init);
+
+
+    yt.pubsub.subscribe('init', function() {
+      var description = _gel('watch-description');
+      if (!_hasclass(description, 'yt-uix-expander-collapsed')) {
+        yt.www.watch.watch5.handleToggleDescription(description);
+      }
+    });
+
+
+
+
+
+
+
+  </script>
+
+  
+
+    <script>
+      yt.pubsub.subscribe('init', function() {
+          var iframeContents = "\n  \u003cscript\u003e\n    var google_max_num_ads = '1';\n    var google_ad_output = 'js';\n    var google_ad_type = 'text';\n    var google_only_pyv_ads = true;\n    var google_video_doc_id = \"yt_8mnAJ4IMggo\";\n      var google_ad_request_done = parent.yt.www.ads.pyv.pyvWatchAfcCallback;\n    var google_ad_client = 'ca-pub-6219811747049371';\n    var google_ad_block = '3';\n      var google_page_url = \"http:\\\/\\\/www.youtube.com\\\/video\\\/8mnAJ4IMggo\";\n      var google_ad_channel = \"PyvWatchInRelated+PyvYTWatch+PyvWatchNoAdX+lpw+afv_ugc+yt_mpvid_AAS-rEevWnprRrro+Vertical_Banner_13+Vertical_Banner_533+Vertical_Banner_980+VidVert13+VidVert533+VidVert980+Vertical_13+Vertical_533+Vertical_980\";\n      var google_language = \"en\";\n  \u003c\/script\u003e\n\n  \u003cscript s\u0072c=\"\/\/pagead2.googlesyndication.com\/pagead\/show_ads.js\"\u003e\u003c\/script\u003e\n";
+          yt.www.ads.pyv.loadPyvIframe(iframeContents);
+      });
+    </script>
+
+
+
+
+
+
+  
+
+  
+
+      <script>
+      if (window.yt.timing) {
+        yt.timing.tick("js_page");
+      }
+    </script>
+
+        <script>
+      yt.setConfig('TIMING_ACTION', "watch5");
+    </script>
+
+
+
+
+
+  <script>
+    
+
+
+  yt.setMsg({
+    'LIST_CLEARED': "List cleared",
+    'PLAYLIST_VIDEO_DELETED': "Video deleted.",
+    'ERROR_OCCURRED': "Sorry, an error occurred.",
+    'NEXT_VIDEO_TOOLTIP': "Next video:\u003cbr\u003e \u0026#8220;${next_video_title}\u0026#8221;",
+    'NEXT_VIDEO_NOTHUMB_TOOLTIP': "Next video",
+    'SHOW_PLAYLIST_TOOLTIP': "Show playlist",
+    'HIDE_PLAYLIST_TOOLTIP': "Hide playlist",
+    'AUTOPLAY_ON_TOOLTIP': "Turn autoplay off",
+    'AUTOPLAY_OFF_TOOLTIP': "Turn autoplay on",
+    'SHUFFLE_ON_TOOLTIP': "Turn shuffle off",
+    'SHUFFLE_OFF_TOOLTIP': "Turn shuffle on",
+    'PLAYLIST_BAR_PLAYLIST_SAVED': "Playlist saved!",
+    'PLAYLIST_BAR_ADDED_TO_FAVORITES': "Added to favorites",
+    'PLAYLIST_BAR_ADDED_TO_PLAYLIST': "Added to playlist",
+    'PLAYLIST_BAR_ADDED_TO_QUEUE': "Added to queue",
+    'AUTOPLAY_WARNING1': "Next video starts in 1 second...",
+    'AUTOPLAY_WARNING2': "Next video starts in 2 seconds...",
+    'AUTOPLAY_WARNING3': "Next video starts in 3 seconds...",
+    'AUTOPLAY_WARNING4': "Next video starts in 4 seconds...",
+    'AUTOPLAY_WARNING5': "Next video starts in 5 seconds...",
+    'UNDO_LINK': "Undo"  });
+
+
+  yt.setConfig({
+    'DRAGDROP_BINARY_URL': "\/\/s.ytimg.com\/yt\/jsbin\/www-dragdrop-vflLuNHvY.js",
+    'PLAYLIST_BAR_PLAYING_INDEX': -1,
+    'LIST_COPY_ON_EDIT_ENABLED': false  });
+
+    yt.net.ajax.setToken('addto_ajax_logged_out', "qI1OhlATc9yQWcBScbXFGhHJCgR8MEAxMzM1NTQ3MDUz");
+
+    yt.www.lists.init();
+
+
+
+
+
+    
+    yt.pubsub.subscribe('init', function() {
+      yt.www.thumbnaildelayload.init(0);
+    });
+
+
+
+
+
+      yt.pubsub.subscribe('init', function() {
+        yt.net.scriptloader.load("\/\/s.ytimg.com\/yt\/jsbin\/www-searchbox-vfliI0gmd.js", function() {
+          
+      if (_gel('masthead-search')) {
+        yt.setTimeout(function() {
+          searchbox.yt.install(_gel('masthead-search'),
+              _gel('masthead-search')["search_query"],
+              "en",
+              "us",
+              false,
+              '',
+              '',
+              null,
+              null,
+              "Suggestion dismissed",
+              "Dismiss",
+              -1,
+              null);
+        }, 100);
+      }
+
+        });
+      });
+
+
+
+  </script>
+
+  <script>
+
+    yt.setMsg({
+      'ADDTO_WATCH_LATER_ADDED': "Added",
+      'ADDTO_WATCH_LATER_ERROR': "Error"
+    });
+
+    yt.pubsub.subscribe('init', yt.www.lists.addtowatchlater.init);
+  </script>
+
+  
+
+      <script>
+      if (window.yt.timing) {
+        yt.timing.tick("js_foot");
+      }
+    </script>
+
+
+  
+
+
+<iframe src='javascript:""' style="border: 0pt none; vertical-align: bottom;" frameborder="0"></iframe><iframe style="display: none; top: 46.5px; left: 0px; height: 0px;" class="gssb_k"></iframe><table class="gstl_0 gssb_c" style="width: 377px; display: none; top: 46.5px; left: 263.5px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table></body></html>
